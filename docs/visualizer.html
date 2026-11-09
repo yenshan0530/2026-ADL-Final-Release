@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Run Viewer</title>
+<style>
+:root {
+  --bg: #fbfaf8; --panel: #ffffff; --fg: #1f2328; --muted: #6b7078; --line: #dcdad4;
+  --accent: #3b6fb6; --sell: #c2611f; --buy: #2f7d57; --bad: #b42318;
+  --k-competitive: #dbe9f6; --k-scarce: #f8dfd4; --k-balanced: #e6eadb; --k-monopoly: #eadcf2;
+  --k-oligopoly: #f5ead0; --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --panel: #1d2024; --fg: #e6e6e3; --muted: #9a9ea5; --line: #33373d;
+    --accent: #7aa7e6; --sell: #e59a62; --buy: #6cc596; --bad: #f08a80;
+    --k-competitive: #213244; --k-scarce: #46291f; --k-balanced: #2d3324; --k-monopoly: #37283f;
+    --k-oligopoly: #3d3420;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --panel: #1d2024; --fg: #e6e6e3; --muted: #9a9ea5; --line: #33373d;
+  --accent: #7aa7e6; --sell: #e59a62; --buy: #6cc596; --bad: #f08a80;
+  --k-competitive: #213244; --k-scarce: #46291f; --k-balanced: #2d3324; --k-monopoly: #37283f;
+  --k-oligopoly: #3d3420;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 var(--sans); }
+main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
+h1 { font-size: 22px; margin: 0 0 4px; } h2 { font-size: 17px; margin: 28px 0 8px; }
+h4 { margin: 18px 0 6px; font-size: 14px; }
+.small { color: var(--muted); font-size: 13px; }
+#drop { border: 2px dashed var(--line); border-radius: 10px; padding: 26px 16px; text-align: center;
+  background: var(--panel); margin: 14px 0; transition: border-color .15s, background .15s; }
+#drop.over { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--panel)); }
+#drop b { font-size: 16px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin: 10px 0; }
+select, button, input[type=search] { font: 14px var(--sans); padding: 4px 8px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--panel); color: var(--fg); max-width: 100%; }
+button { cursor: pointer; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; }
+table.stock td, table.stock th, table.std td, table.std th { text-align: center; padding: 3px 7px;
+  font: 12px var(--mono); border-bottom: 1px solid var(--line); }
+table.std td:nth-child(2), table.std th:nth-child(2) { text-align: left; }
+table.stock td.zero { color: var(--muted); } .n { color: var(--muted); font-size: 10.5px; }
+.k-competitive { background: var(--k-competitive); } .k-scarce { background: var(--k-scarce); }
+.k-balanced { background: var(--k-balanced); } .k-monopoly { background: var(--k-monopoly); }
+.k-oligopoly { background: var(--k-oligopoly); }
+.kchip { padding: 1px 6px; border-radius: 4px; font: 12px var(--mono); }
+.chat { display: flex; flex-direction: column; gap: 6px; }
+.msg { border: 1px solid var(--line); border-left-width: 4px; border-radius: 6px; padding: 6px 10px;
+  background: var(--panel); max-width: 88%; }
+.msg.s { border-left-color: var(--sell); align-self: flex-start; }
+.msg.b { border-left-color: var(--buy); align-self: flex-end; }
+.msg.e { border-left-color: var(--muted); align-self: center; font-size: 13px; }
+.hdr { font-size: 12px; color: var(--muted); } .hdr .when { float: right; margin-left: 10px; }
+.who.s { color: var(--sell); font-weight: 600; } .who.b { color: var(--buy); font-weight: 600; }
+.bad { color: var(--bad); }
+details.ps { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+details.ps summary { cursor: pointer; }
+.cards { display: flex; flex-wrap: wrap; gap: 10px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; min-width: 150px; }
+.card b { font-size: 18px; display: block; }
+.hidden { display: none; }
+code { font: 12.5px var(--mono); }
+</style>
+</head>
+<body>
+<main>
+<h1>Market Run Viewer</h1>
+<p class="small">See what happened in a run of the market harness: who held what, who talked to whom,
+and every message, offer and trade, round by round. Nothing leaves your computer: the files are
+read in this page.</p>
+
+<div id="drop">
+  <b>Drop a run folder here</b> (<code>results/run_economy_…</code> or <code>results/run_market_…</code>),
+  or one market folder (<code>markets/e0_m0_r0</code>)<br>
+  <span class="small">or choose it:</span>
+  <button id="pickdir" type="button">Choose folder…</button>
+  <button id="pickfiles" type="button">Choose files…</button>
+  <input id="dirin" type="file" webkitdirectory multiple class="hidden">
+  <input id="filein" type="file" multiple accept=".json,.jsonl,.md" class="hidden">
+  <p class="small" id="loadinfo">A market needs <code>final.json</code>; <code>transcript.jsonl</code> adds every action and
+  private note, <code>agents.jsonl</code> adds owners and models. A run folder adds standings and statistics.</p>
+</div>
+
+<section id="run" class="hidden">
+  <h2>Run</h2>
+  <div class="cards" id="runcards"></div>
+  <div id="standings"></div>
+</section>
+
+<section id="market" class="hidden">
+  <h2>Market</h2>
+  <div class="controls">
+    <label>Market <select id="xmkt"></select></label>
+    <label>Show <select id="xpair"></select></label>
+    <label><input type="search" id="xfind" placeholder="find text…"></label>
+  </div>
+  <p class="small" id="xinfo"></p>
+  <h4>Scores in this market</h4>
+  <p class="small">Seller: profit = revenue − cost of the units sold. Buyer: surplus = value of the
+  units bought − money paid. Ranked within each role, as in the standings; students in bold.</p>
+  <div class="scroll" id="xscores"></div>
+  <h4>Stock: which seller holds which items</h4>
+  <p class="small"><span class="kchip k-competitive">competitive</span> more supply than demand ·
+  <span class="kchip k-scarce">scarce</span> less ·
+  <span class="kchip k-balanced">balanced</span> supply = demand ·
+  <span class="kchip k-oligopoly">oligopoly</span> held by up to three sellers ·
+  <span class="kchip k-monopoly">monopoly</span> held by one. Cell: units at the start (units sold in
+  brackets); ★ = can be delivered in low grade.</p>
+  <div class="scroll" id="xstock"></div>
+  <h4>Who talked to whom</h4>
+  <p class="small">Sellers left, buyers right; a line's width grows with the messages and offers between two
+  agents, a dot's size with its room posts. Click a line to read that conversation.</p>
+  <div class="scroll"><svg id="xsvg" viewBox="0 0 640 420" style="width:100%;max-width:760px;height:auto;display:block"
+    role="img" aria-label="Who talked to whom"></svg></div>
+  <p class="small" id="xdet">&nbsp;</p>
+  <div id="xconv"></div>
+</section>
+</main>
+
+<script>
+"use strict";
+// ---------------------------------------------------------------- pure functions ---
+// (also loaded by tests: no DOM here)
+const TALK = ["send_message", "make_offer", "accept_offer", "propose_swap", "accept_swap",
+              "post_to_room", "post_review", "buy_listed"];
+
+function parseJsonl(text) {
+  return text.split("\n").filter(l => l.trim()).map(l => JSON.parse(l));
+}
+
+function say(row, offers) {
+  const a = row.args || {}, t = row.tool;
+  if (t === "send_message" || t === "post_to_room") return a.message || "";
+  if (t === "make_offer")
+    return `OFFER ${a.qty} x ${a.product_id} @ $${a.price}` + (a.grade ? ` (${a.grade})` : "")
+         + (a.message ? ` — ${a.message}` : "");
+  if (t === "accept_offer") {
+    const o = offers[a.offer_id];
+    return `ACCEPT ${a.offer_id}` + (o ? ` (${o.qty} x ${o.product} @ $${(o.price / 100).toFixed(2)})` : "");
+  }
+  if (t === "propose_swap")
+    return `SWAP give ${JSON.stringify(a.give)} get ${JSON.stringify(a.get)}`
+         + (a.cash ? ` cash $${a.cash}` : "") + (a.message ? ` — ${a.message}` : "");
+  if (t === "accept_swap") return `ACCEPT SWAP ${a.swap_id}`;
+  if (t === "post_review") return `REVIEW ${a.rating}/5 of ${a.trade_id}: ${a.text || ""}`;
+  if (t === "buy_listed") return `BUYS FROM BOARD ${a.qty} x ${a.product_id} from ${a.seller_id}`;
+  return t;
+}
+
+// One market from its files: {final, transcript (rows or null), agents (rows or null), stats, name}
+function buildMarket(m) {
+  const fin = m.final;
+  const offers = {}, swaps = {};
+  (fin.offers || []).forEach(o => offers[o.id] = o);
+  (fin.swaps || []).forEach(w => swaps[w.id] = w);
+  const meta = {};
+  (m.agents || []).forEach(a => meta[a.agent] = a);
+  const agents = [...(fin.sellers || []).map(s => ({id: s.id, role: "seller"})),
+                  ...(fin.buyers || []).map(b => ({id: b.id, role: "buyer"}))]
+    .map(a => ({...a, owner: (meta[a.id] || {}).owner || "",
+                model: typeof (meta[a.id] || {}).model === "string" ? meta[a.id].model : ""}));
+  const roles = {}; agents.forEach(a => roles[a.id] = a.role);
+  let events = [];
+  if (m.transcript) {
+    m.transcript.forEach(r => {
+      if (!TALK.includes(r.tool)) return;
+      const a = r.args || {};
+      const tgt = a.to || a.buyer_id || a.seller_id || (offers[a.offer_id] || {}).seller
+                || (swaps[a.swap_id] || {}).proposer || (r.tool === "post_to_room" ? "room" : "");
+      const res = r.result || {};
+      events.push({round: r.round, tick: r.tick, from: r.agent, to: tgt, tool: r.tool,
+                   text: say(r, offers), error: res.ok ? "" : String(res.error || ""),
+                   note: r.private_state || ""});
+    });
+  } else {                                   // only final.json: its messages and trades
+    (fin.messages || []).forEach(x => {
+      if (x.channel === "notice") return;
+      events.push({round: x.round, tick: x.tick, from: x.sender,
+                   to: x.channel === "dm" ? x.to : (x.channel === "review" ? "" : "room"),
+                   tool: x.channel === "dm" ? "send_message" : (x.channel === "review" ? "post_review" : "post_to_room"),
+                   text: x.text, error: "", note: ""});
+    });
+    (fin.trades || []).forEach(t => events.push({round: t.round, tick: t.tick, from: t.buyer, to: t.seller,
+      tool: "trade", text: `TRADE ${t.qty} x ${t.product} @ $${(t.price / 100).toFixed(2)} via ${t.via}`,
+      error: "", note: ""}));
+    events.sort((x, y) => x.tick - y.tick);
+  }
+  const titles = {}; (fin.products || []).forEach(p => titles[p.id] = p.title || "");
+  const goods = ((fin.schema || {}).products || []).map(p => ({id: p.product_id, kind: p.kind,
+    cost: p.cost, q: !!p.quality_varies, title: (titles[p.product_id] || "").slice(0, 60)}));
+  const stock = {}, sold = {};
+  (fin.sellers || []).forEach(s => {
+    stock[s.id] = {}; sold[s.id] = {};
+    Object.entries(s.initial_stock || {}).forEach(([k, v]) => {
+      if (v) stock[s.id][k] = v;
+      const d = v - ((s.stock || {})[k] || 0);
+      if (d) sold[s.id][k] = d;
+    });
+  });
+  // each agent's score, as in the standings: seller profit = revenue - cost of units sold,
+  // buyer surplus = value of units bought - money paid (scores.json when present)
+  const given = {}; (m.scores || []).forEach(r => given[r.agent] = r);
+  const units = {}; (fin.trades || []).forEach(t => {
+    units[t.seller] = (units[t.seller] || 0) + t.qty; units[t.buyer] = (units[t.buyer] || 0) + t.qty; });
+  const scores = agents.map(a => {
+    const r = given[a.id];
+    let raw = r ? r.raw : null;
+    if (raw == null) {
+      const s = (fin.sellers || []).find(x => x.id === a.id), b = (fin.buyers || []).find(x => x.id === a.id);
+      if (s) raw = ((s.revenue || 0) - (s.cost_of_sold || 0)) / 100;
+      if (b) raw = ((b.gained_utility || 0) + (b.cash || 0) - (b.budget || 0)) / 100;
+    }
+    return {agent: a.id, role: a.role, owner: (r && r.owner) || a.owner, raw,
+            normalized: r ? r.normalized : null, units: units[a.id] || 0};
+  });
+  return {name: m.name, agents, roles, events, goods, stock, sold, scores,
+          deals: (fin.trades || []).length, messages: (fin.messages || []).length,
+          stats: m.stats || null, hasTranscript: !!m.transcript};
+}
+
+// Group dropped files ({path, text}) into a run: markets/<id>/{final.json,...} + run files.
+function groupFiles(files) {
+  const markets = {}, run = {};
+  files.forEach(f => {
+    const parts = f.path.split("/").filter(Boolean);
+    const name = parts[parts.length - 1];
+    const mi = parts.lastIndexOf("markets");
+    if (mi >= 0 && parts.length >= mi + 3) {
+      const id = parts[mi + 1];
+      (markets[id] = markets[id] || {name: id})[name] = f.text;
+    } else if (["final.json", "transcript.jsonl", "agents.jsonl", "stats.json", "scores.json"].includes(name)) {
+      const id = parts.length >= 2 ? parts[parts.length - 2] : "market";
+      (markets[id] = markets[id] || {name: id})[name] = f.text;
+    } else {
+      run[name] = f.text;
+    }
+  });
+  const out = [];
+  Object.values(markets).forEach(m => {
+    if (!m["final.json"]) return;
+    out.push(buildMarket({name: m.name, final: JSON.parse(m["final.json"]),
+      transcript: m["transcript.jsonl"] ? parseJsonl(m["transcript.jsonl"]) : null,
+      agents: m["agents.jsonl"] ? parseJsonl(m["agents.jsonl"]) : null,
+      stats: m["stats.json"] ? JSON.parse(m["stats.json"]) : null,
+      scores: m["scores.json"] ? JSON.parse(m["scores.json"]) : null}));
+  });
+  out.sort((a, b) => a.name.localeCompare(b.name, undefined, {numeric: true}));
+  const j = k => { try { return run[k] ? JSON.parse(run[k]) : null; } catch (e) { return null; } };
+  return {markets: out, standings: j("standings.json"), metadata: j("metadata.json"),
+          stats: j("economy_stats.json")};
+}
+
+if (typeof module !== "undefined") module.exports = {buildMarket, groupFiles, parseJsonl, say};
+
+// ------------------------------------------------------------------------- page ---
+if (typeof document !== "undefined") (function () {
+  const $ = id => document.getElementById(id);
+  const NS = "http://www.w3.org/2000/svg";
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+  const el = (t, a) => { const x = document.createElementNS(NS, t); for (const k in a) x.setAttribute(k, a[k]); return x; };
+  const opt = (s, v, t) => { const o = document.createElement("option"); o.value = v; o.textContent = t; s.appendChild(o); };
+  const pct = x => x == null ? "–" : `${Math.round(x * 100)}%`;
+  let R = null, M = null;
+
+  async function readEntry(entry, prefix, out) {
+    if (entry.isFile) {
+      if (!/\.(json|jsonl|md)$/.test(entry.name) || /events\.jsonl$/.test(entry.name)) return;
+      const file = await new Promise((ok, no) => entry.file(ok, no));
+      out.push({path: prefix + entry.name, text: await file.text()});
+    } else if (entry.isDirectory) {
+      if (["vllm", "agents", "schemas"].includes(entry.name) && prefix) return;
+      const reader = entry.createReader();
+      let batch;
+      do {
+        batch = await new Promise((ok, no) => reader.readEntries(ok, no));
+        for (const e of batch) await readEntry(e, prefix + entry.name + "/", out);
+      } while (batch.length);
+    }
+  }
+  async function fromFileList(list) {
+    const out = [];
+    for (const f of list) {
+      const path = f.webkitRelativePath || f.name;
+      if (!/\.(json|jsonl|md)$/.test(f.name) || /events\.jsonl$/.test(f.name)) continue;
+      out.push({path, text: await f.text()});
+    }
+    return out;
+  }
+  async function load(files) {
+    $("loadinfo").textContent = `reading ${files.length} files…`;
+    try {
+      R = groupFiles(files);
+    } catch (err) {
+      $("loadinfo").textContent = `Could not read these files: ${err.message}`;
+      return;
+    }
+    if (!R.markets.length) {
+      $("loadinfo").textContent = "No market found: drop a run folder, a markets/<id> folder, or a final.json.";
+      return;
+    }
+    $("loadinfo").textContent = `${R.markets.length} market(s) loaded` + (R.metadata ? ` from ${R.metadata.run}` : "") + ".";
+    showRun();
+    const sel = $("xmkt"); sel.innerHTML = "";
+    R.markets.forEach((m, i) => opt(sel, i, `${m.name} (${m.events.length} events, ${m.deals} trades)`));
+    $("market").classList.remove("hidden");
+    loadMkt();
+  }
+
+  function showRun() {
+    const md = R.metadata, st = R.stats, sd = R.standings;
+    if (!md && !st && !sd) { $("run").classList.add("hidden"); return; }
+    $("run").classList.remove("hidden");
+    const cards = [];
+    if (md) cards.push(["run", md.run], ["markets", md.markets], ["turns", md.turns], ["trades", md.trades],
+                       ["messages", md.messages], ["started", (md.started || "").replace("T", " ").slice(0, 16)]);
+    if (st && st.all) cards.push(["gains realized", pct(st.all.efficiency)], ["stock sold", pct(st.all.sold_share)]);
+    $("runcards").innerHTML = cards.map(([k, v]) => `<div class="card"><span class="small">${esc(k)}</span><b>${esc(v)}</b></div>`).join("");
+    let h = "";
+    if (sd && sd.students) {
+      ["seller", "buyer"].forEach(role => {
+        const rows = sd.students.filter(s => s.role === role);
+        if (!rows.length) return;
+        const graded = rows.some(s => "grade" in s);
+        h += `<h4>Student ${role}s</h4><div class="scroll"><table class="std"><thead><tr><th>rank</th><th>student</th>`
+           + (graded ? "<th>grade</th>" : "") + "<th>raw $</th><th>$ / round</th><th>markets</th></tr></thead><tbody>"
+           + rows.map(s => `<tr><td>${s.rank}</td><td>${esc(s.owner)}</td>`
+             + (graded ? `<td>${s.grade == null ? "–" : s.grade.toFixed(3)}</td>` : "")
+             + `<td>${s.mean_raw.toFixed(2)}</td><td>${s.mean_raw_per_round == null ? "–" : s.mean_raw_per_round.toFixed(2)}</td>`
+             + `<td>${s.markets}</td></tr>`).join("") + "</tbody></table></div>";
+      });
+    }
+    $("standings").innerHTML = h;
+  }
+
+  function label(id) {
+    const a = M.agents.find(x => x.id === id);
+    if (!a) return id;
+    return a.owner && a.owner !== id && !id.startsWith(a.owner) ? `${id} [${a.owner}]` : id;
+  }
+  function loadMkt() {
+    M = R.markets[+$("xmkt").value];
+    const cnt = {};
+    M.events.forEach(v => { if (v.to && v.to !== "room" && M.roles[v.to]) {
+      const k = [v.from, v.to].sort().join("|"); cnt[k] = (cnt[k] || 0) + 1; } });
+    const pair = $("xpair"); pair.innerHTML = "";
+    opt(pair, "ALL", "All talk, round by round");
+    opt(pair, "ROOM:seller", "Seller room"); opt(pair, "ROOM:buyer", "Buyer room");
+    M.agents.forEach(a => opt(pair, "AGENT:" + a.id, `Everything ${a.id} said or got`));
+    Object.entries(cnt).sort((a, b) => b[1] - a[1]).forEach(([k, n]) => {
+      const [a, b] = k.split("|"); opt(pair, k, `${label(a)} ↔ ${label(b)} (${n})`); });
+    draw(cnt); scores(); stock(); show();
+    const s = M.stats;
+    $("xinfo").textContent = `${M.name}: ${M.agents.length} agents, ${M.events.length} talk events, ${M.deals} trades`
+      + (s ? ` · ${pct(s.efficiency)} of the possible gains realized, ${pct(s.sold_share)} of the stock sold` : "")
+      + (M.hasTranscript ? "" : " · no transcript.jsonl: messages and trades only");
+  }
+  function scores() {
+    const box = $("xscores");
+    if (!M.scores || !M.scores.length) { box.innerHTML = "<p class=small>No score data.</p>"; return; }
+    const money = x => x == null ? "–" : (x < 0 ? "−$" : "$") + Math.abs(x).toFixed(2);
+    let h = '<table class="std"><thead><tr><th>rank</th><th>agent</th><th>owner</th>'
+          + '<th>profit / surplus</th><th>normalized</th><th>units</th></tr></thead><tbody>';
+    ["seller", "buyer"].forEach(role => {
+      const rows = M.scores.filter(s => s.role === role)
+        .sort((a, b) => (b.raw ?? -1e9) - (a.raw ?? -1e9));
+      if (!rows.length) return;
+      h += `<tr><th colspan="6" style="text-align:left">${role === "seller" ? "Sellers (profit)" : "Buyers (surplus)"}</th></tr>`;
+      rows.forEach((s, i) => {
+        const b = s.owner && s.owner !== "ta";
+        h += `<tr><td>${i + 1}</td><td>${b ? "<b>" : ""}${esc(label(s.agent))}${b ? "</b>" : ""}</td>`
+           + `<td>${esc(s.owner || "")}</td><td>${money(s.raw)}</td>`
+           + `<td>${s.normalized == null ? "–" : s.normalized.toFixed(3)}</td><td>${s.units}</td></tr>`;
+      });
+    });
+    box.innerHTML = h + "</tbody></table>";
+  }
+  function stock() {
+    const box = $("xstock");
+    if (!M.goods.length) { box.innerHTML = "<p class=small>No stock data.</p>"; return; }
+    const order = {competitive: 0, scarce: 1, balanced: 2, oligopoly: 3, monopoly: 4};
+    const goods = M.goods.slice().sort((a, b) => (order[a.kind] ?? 9) - (order[b.kind] ?? 9) || a.id.localeCompare(b.id));
+    const sellers = M.agents.filter(a => a.role === "seller").map(a => a.id);
+    let h = '<table class="stock"><thead><tr><th>seller</th>' + goods.map(g =>
+      `<th class="k-${esc(g.kind)}" title="${esc(g.title)} · ${esc(g.kind)} · unit cost $${g.cost}">${esc(g.id)}${g.q ? "★" : ""}</th>`).join("")
+      + "<th>total</th></tr></thead><tbody>";
+    sellers.forEach(sid => {
+      const st = M.stock[sid] || {}, sd = M.sold[sid] || {};
+      let tot = 0, totSold = 0;
+      h += `<tr><th>${esc(label(sid))}</th>` + goods.map(g => {
+        const n = st[g.id] || 0, k = sd[g.id] || 0; tot += n; totSold += k;
+        return n ? `<td class="k-${esc(g.kind)}">${n}<span class="n"> (${k})</span></td>` : '<td class="zero">·</td>';
+      }).join("") + `<td><b>${tot}</b><span class="n"> (${totSold})</span></td></tr>`;
+    });
+    box.innerHTML = h + "</tbody></table>";
+  }
+  function draw(cnt) {
+    const svg = $("xsvg"); svg.innerHTML = "";
+    const S = M.agents.filter(a => a.role === "seller"), B = M.agents.filter(a => a.role === "buyer"), pos = {};
+    const place = (arr, x) => arr.forEach((n, i) => pos[n.id] = [x, 30 + (360 * (i + 0.5)) / Math.max(1, arr.length)]);
+    place(S, 190); place(B, 450);
+    const room = {}; M.events.forEach(v => { if (v.to === "room") room[v.from] = (room[v.from] || 0) + 1; });
+    Object.entries(cnt).forEach(([k, w]) => {
+      const [a, b] = k.split("|"); if (!pos[a] || !pos[b]) return;
+      const [x1, y1] = pos[a], [x2, y2] = pos[b], same = x1 === x2;
+      const cx = same ? x1 + (x1 < 320 ? -110 : 110) : (x1 + x2) / 2;
+      const p = el("path", {d: `M${x1},${y1} Q${cx},${(y1 + y2) / 2} ${x2},${y2}`, fill: "none", stroke: "var(--accent)",
+        "stroke-width": Math.min(14, 1 + Math.sqrt(w) * 1.6), opacity: 0.5});
+      p.style.cursor = "pointer";
+      const t = el("title", {}); t.textContent = `${label(a)} ↔ ${label(b)}: ${w} messages and offers`; p.appendChild(t);
+      p.addEventListener("click", () => { $("xpair").value = k; show(); $("xdet").textContent = t.textContent; });
+      p.addEventListener("mouseenter", () => $("xdet").textContent = t.textContent);
+      svg.appendChild(p);
+    });
+    M.agents.forEach(n => {
+      const [x, y] = pos[n.id], r = 7 + Math.min(12, Math.sqrt(room[n.id] || 0) * 3);
+      const c = el("circle", {cx: x, cy: y, r, fill: n.role === "seller" ? "var(--sell)" : "var(--buy)", stroke: "var(--bg)", "stroke-width": 2});
+      const t = el("title", {}); t.textContent = `${label(n.id)}: ${room[n.id] || 0} room posts`; c.appendChild(t);
+      c.style.cursor = "pointer";
+      c.addEventListener("click", () => { $("xpair").value = "AGENT:" + n.id; show(); });
+      svg.appendChild(c);
+      const lab = el("text", {x: n.role === "seller" ? x - r - 5 : x + r + 5, y: y + 4,
+        "text-anchor": n.role === "seller" ? "end" : "start", "font-size": 11, fill: "var(--fg)", "font-family": "var(--mono)"});
+      lab.textContent = n.id; svg.appendChild(lab);
+    });
+  }
+  function show() {
+    const v = $("xpair").value, find = $("xfind").value.trim().toLowerCase();
+    let rows = M.events;
+    if (v.startsWith("ROOM:")) rows = rows.filter(x => x.to === "room" && M.roles[x.from] === v.slice(5));
+    else if (v.startsWith("AGENT:")) { const a = v.slice(6); rows = rows.filter(x => x.from === a || x.to === a); }
+    else if (v !== "ALL") { const [a, b] = v.split("|"); rows = rows.filter(x => (x.from === a && x.to === b) || (x.from === b && x.to === a)); }
+    if (find) rows = rows.filter(x => (x.text + " " + x.note).toLowerCase().includes(find));
+    let html = "", lastR = null;
+    rows.slice(0, 1500).forEach(x => {
+      const side = x.tool === "trade" ? "e" : (M.roles[x.from] === "seller" ? "s" : "b");
+      if (x.round !== lastR) { html += `<h4>Round ${x.round}</h4>`; lastR = x.round; }
+      const to = x.to === "room" ? `${M.roles[x.from]} room`
+        : x.to ? `<span class="who ${M.roles[x.to] === "seller" ? "s" : "b"}">${esc(label(x.to))}</span>` : "everyone";
+      const bold = /^(OFFER|ACCEPT|SWAP|REVIEW|BUYS|TRADE)/.test(x.text);
+      const body = bold ? `<b>${esc(x.text.split(" — ")[0])}</b>` + (x.text.includes(" — ") ? " — " + esc(x.text.split(" — ").slice(1).join(" — ")) : "")
+                        : esc(x.text);
+      html += `<div class="msg ${side}"><div class="hdr"><span class="who ${side}">${esc(label(x.from))}</span> → ${to}`
+            + `<span class="when">turn ${x.tick}</span></div><div>${body}`
+            + (x.error ? ` <span class="bad">[rejected: ${esc(x.error)}]</span>` : "") + "</div>"
+            + (x.note ? `<details class="ps"><summary>private note</summary>${esc(x.note)}</details>` : "") + "</div>";
+    });
+    if (rows.length > 1500) html += `<p class="small">… first 1500 of ${rows.length} shown</p>`;
+    $("xconv").innerHTML = `<div class="chat">${html || "<p class=small>Nothing in this view.</p>"}</div>`;
+  }
+
+  const drop = $("drop");
+  ["dragenter", "dragover"].forEach(t => drop.addEventListener(t, ev => { ev.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach(t => drop.addEventListener(t, () => drop.classList.remove("over")));
+  document.addEventListener("dragover", ev => ev.preventDefault());
+  document.addEventListener("drop", ev => ev.preventDefault());
+  drop.addEventListener("drop", async ev => {
+    ev.preventDefault();
+    const items = [...(ev.dataTransfer.items || [])].map(i => i.webkitGetAsEntry && i.webkitGetAsEntry()).filter(Boolean);
+    const out = [];
+    if (items.length) { for (const e of items) await readEntry(e, "", out); }
+    else out.push(...await fromFileList(ev.dataTransfer.files));
+    load(out);
+  });
+  $("pickdir").addEventListener("click", () => $("dirin").click());
+  $("pickfiles").addEventListener("click", () => $("filein").click());
+  $("dirin").addEventListener("change", async ev => load(await fromFileList(ev.target.files)));
+  $("filein").addEventListener("change", async ev => load(await fromFileList(ev.target.files)));
+  $("xmkt").addEventListener("change", loadMkt);
+  $("xpair").addEventListener("change", show);
+  $("xfind").addEventListener("input", show);
+})();
+</script>
+</body>
+</html>

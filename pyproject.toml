@@ -1,0 +1,36 @@
+# ADL 2026 final project: the market harness, vLLM serving of Qwen3.5-4B with LoRAs, and the
+# libraries to train a LoRA. Resolved and tested together on Python 3.11 / 3.12 (vllm 0.25.1,
+# the grading version; torch 2.11 with CUDA 13, which needs NVIDIA driver 580 or newer).
+#
+#   uv sync && source .venv/bin/activate          # or: pip install -e .
+#
+# Training Qwen3.5 is much faster with its linear-attention kernels (optional; needs a CUDA
+# toolchain):  uv pip install flash-linear-attention causal-conv1d
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adlmarket"
+version = "0.1.0"
+description = "ADL 2026 final project: LLM market game harness (sellers vs buyers)"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    # the market harness
+    "openai>=1.40",
+    "pydantic>=2.7",
+    "pyyaml>=6.0",
+    # serving Qwen3.5-4B + LoRAs (run_local.sh, --launch-vllm); the grading version
+    "vllm==0.25.1",
+    # training a LoRA (any framework that saves a PEFT adapter is fine); tested versions
+    "transformers==5.22.1",
+    "peft==0.21.2",
+    "trl==1.17.1",
+    "datasets>=3.0",
+    "accelerate>=1.0",
+    "safetensors",
+]
+
+[tool.setuptools.packages.find]
+include = ["adlmarket*"]          # the package at the repository root

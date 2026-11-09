@@ -1,0 +1,22 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv*/
+.env
+/results/
+/.cache/
+/logs/
+/handin/
+
+# LoRA weights are large and handed in through the zip, so git does not track them here.
+# Delete these lines if you want git to track your own checkpoint/ folders.
+agents/**/checkpoint/*
+*.safetensors
+
+# TA LoRAs: adapter_config.json is committed; the weights are downloaded by
+# scripts/download_ta_loras.py
+!agents/_ta/*/checkpoint/adapter_config.json
+
+# the sample agent's untrained LoRA (rank 1, a few MB) is committed as a working example
+!agents/example_student/*/checkpoint/
+!agents/example_student/*/checkpoint/*

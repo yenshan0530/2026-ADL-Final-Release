@@ -1,0 +1,46 @@
+# run_market.py: one market with exactly these agents, played `repeats` times.
+#
+#   python run_market.py                                # this file
+#   python run_market.py --config configs/my_market.yaml
+#
+# Every setting is here (no command-line overrides): copy this file to try other settings.
+#
+# List agent files (or globs). Student agents are agents/<student_id>/<role>/agent.yaml;
+# their persona_*.md and checkpoint/ are picked up automatically. A student agent plays
+# personas_per_student copies (default 1 here; with more, all copies sit in this market).
+
+name: my_market
+seed: 0
+models: configs/models.yaml
+
+sellers:
+  - agents/_ta/seller                    # the TA seller: plays each of its 3 personas (3 sellers)
+
+buyers:
+  - agents/example_student/buyer         # the agent you are testing (put yours here)
+  - {agent: agents/_ta/buyer, personas: [persona_1.md, persona_2.md]}   # 2 of the TA buyer's personas
+# 3 sellers x 3 buyers to try things locally; grading markets are 5 sellers x 10 buyers
+
+# Independent plays of the items (agents act in a different random order each time; with a
+# list of item files, repeat n plays file n). With rotation (`rotate: true`, the default)
+# each is played once per seller seat (3 here) with the stock rotated.
+repeats: 3
+
+# Save every turn, prompt and message (default on for single markets).
+save_trajectories: true
+
+market:
+  catalog: scenarios/public/catalog.yaml
+  rounds: {total: 5, turns_per_round: 6}     # every market lasts exactly 5 rounds of 6 turns
+  # The items of the item file that have a `kind` (as configs/economy.yaml; with 3 sellers
+  # the 5 monopoly items are dealt 2, 2, 1 over the seats). Every option: docs/CONFIG.md.
+  schema:
+    items: scenarios/public/items_example.json    # required: one file, or one per repeat
+    kinds:                                # which items have each kind: the item file
+      monopoly:    {sellers: one, supply_ratio: 1.0}
+      oligopoly:   {sellers: 3, max_share: 0.5, supply_ratio: 1.0}   # 2 of the 3 sellers here
+      scarce:      {supply_ratio: 0.6}
+      competitive: {supply_ratio: 1.5}
+      balanced:    {supply_ratio: 1.0}
+    budget_extra: 0.15
+  channels: {board: true, dm: true, seller_room: false, buyer_room: true}

@@ -1,0 +1,499 @@
+{
+ "file": "scenarios/public/items_example.json",
+ "currency": "USD, whole dollars",
+ "sampled": {
+  "seed": 2026,
+  "catalog": "scenarios/public/catalog.yaml",
+  "cost": [
+   0.5,
+   0.7
+  ],
+  "value": [
+   1.2,
+   2.0
+  ]
+ },
+ "note": "Every catalog item with its fixed seller cost and buyer value. An economy plays exactly the items that have a `kind` (a kind under market.schema.kinds in the config); `low_grade: true` lets sellers deliver that item in a low grade. Remove or change `kind` to play other items.",
+ "items": [
+  {
+   "id": "P01",
+   "list_price": 0.79,
+   "seller_cost": 1,
+   "buyer_value": 2
+  },
+  {
+   "id": "P02",
+   "list_price": 1.35,
+   "seller_cost": 1,
+   "buyer_value": 3
+  },
+  {
+   "id": "P03",
+   "list_price": 1.67,
+   "seller_cost": 1,
+   "buyer_value": 2,
+   "kind": "monopoly"
+  },
+  {
+   "id": "P04",
+   "list_price": 1.72,
+   "seller_cost": 1,
+   "buyer_value": 3
+  },
+  {
+   "id": "P05",
+   "list_price": 1.8,
+   "seller_cost": 1,
+   "buyer_value": 3
+  },
+  {
+   "id": "P06",
+   "list_price": 1.97,
+   "seller_cost": 1,
+   "buyer_value": 4,
+   "kind": "competitive"
+  },
+  {
+   "id": "P07",
+   "list_price": 2.23,
+   "seller_cost": 1,
+   "buyer_value": 4
+  },
+  {
+   "id": "P08",
+   "list_price": 2.59,
+   "seller_cost": 1,
+   "buyer_value": 4
+  },
+  {
+   "id": "P09",
+   "list_price": 2.91,
+   "seller_cost": 2,
+   "buyer_value": 5
+  },
+  {
+   "id": "P10",
+   "list_price": 3.02,
+   "seller_cost": 2,
+   "buyer_value": 6
+  },
+  {
+   "id": "P11",
+   "list_price": 3.08,
+   "seller_cost": 2,
+   "buyer_value": 5
+  },
+  {
+   "id": "P12",
+   "list_price": 3.74,
+   "seller_cost": 2,
+   "buyer_value": 5
+  },
+  {
+   "id": "P13",
+   "list_price": 3.75,
+   "seller_cost": 3,
+   "buyer_value": 7
+  },
+  {
+   "id": "P14",
+   "list_price": 3.88,
+   "seller_cost": 3,
+   "buyer_value": 8
+  },
+  {
+   "id": "P15",
+   "list_price": 4.0,
+   "seller_cost": 2,
+   "buyer_value": 5
+  },
+  {
+   "id": "P16",
+   "list_price": 4.34,
+   "seller_cost": 2,
+   "buyer_value": 7
+  },
+  {
+   "id": "P17",
+   "list_price": 4.73,
+   "seller_cost": 3,
+   "buyer_value": 7
+  },
+  {
+   "id": "P18",
+   "list_price": 5.58,
+   "seller_cost": 4,
+   "buyer_value": 10
+  },
+  {
+   "id": "P19",
+   "list_price": 5.69,
+   "seller_cost": 4,
+   "buyer_value": 7,
+   "kind": "competitive"
+  },
+  {
+   "id": "P20",
+   "list_price": 5.88,
+   "seller_cost": 4,
+   "buyer_value": 9
+  },
+  {
+   "id": "P21",
+   "list_price": 6.0,
+   "seller_cost": 4,
+   "buyer_value": 9,
+   "kind": "balanced"
+  },
+  {
+   "id": "P22",
+   "list_price": 6.12,
+   "seller_cost": 4,
+   "buyer_value": 10,
+   "kind": "balanced",
+   "low_grade": true
+  },
+  {
+   "id": "P23",
+   "list_price": 6.46,
+   "seller_cost": 3,
+   "buyer_value": 10
+  },
+  {
+   "id": "P24",
+   "list_price": 6.67,
+   "seller_cost": 4,
+   "buyer_value": 11,
+   "kind": "competitive"
+  },
+  {
+   "id": "P25",
+   "list_price": 6.68,
+   "seller_cost": 4,
+   "buyer_value": 13
+  },
+  {
+   "id": "P26",
+   "list_price": 7.14,
+   "seller_cost": 4,
+   "buyer_value": 11
+  },
+  {
+   "id": "P27",
+   "list_price": 7.57,
+   "seller_cost": 5,
+   "buyer_value": 12,
+   "kind": "balanced",
+   "low_grade": true
+  },
+  {
+   "id": "P28",
+   "list_price": 7.85,
+   "seller_cost": 5,
+   "buyer_value": 10,
+   "kind": "scarce"
+  },
+  {
+   "id": "P29",
+   "list_price": 7.97,
+   "seller_cost": 4,
+   "buyer_value": 10
+  },
+  {
+   "id": "P30",
+   "list_price": 8.98,
+   "seller_cost": 5,
+   "buyer_value": 16,
+   "kind": "oligopoly"
+  },
+  {
+   "id": "P31",
+   "list_price": 8.99,
+   "seller_cost": 6,
+   "buyer_value": 12,
+   "kind": "monopoly",
+   "low_grade": true
+  },
+  {
+   "id": "P32",
+   "list_price": 9.54,
+   "seller_cost": 6,
+   "buyer_value": 15
+  },
+  {
+   "id": "P33",
+   "list_price": 9.67,
+   "seller_cost": 6,
+   "buyer_value": 13
+  },
+  {
+   "id": "P34",
+   "list_price": 9.7,
+   "seller_cost": 7,
+   "buyer_value": 17
+  },
+  {
+   "id": "P35",
+   "list_price": 9.8,
+   "seller_cost": 6,
+   "buyer_value": 15
+  },
+  {
+   "id": "P36",
+   "list_price": 9.95,
+   "seller_cost": 7,
+   "buyer_value": 20
+  },
+  {
+   "id": "P37",
+   "list_price": 10.0,
+   "seller_cost": 6,
+   "buyer_value": 16
+  },
+  {
+   "id": "P38",
+   "list_price": 10.01,
+   "seller_cost": 6,
+   "buyer_value": 14
+  },
+  {
+   "id": "P39",
+   "list_price": 10.02,
+   "seller_cost": 7,
+   "buyer_value": 16
+  },
+  {
+   "id": "P40",
+   "list_price": 10.76,
+   "seller_cost": 6,
+   "buyer_value": 21,
+   "kind": "competitive"
+  },
+  {
+   "id": "P41",
+   "list_price": 12.31,
+   "seller_cost": 7,
+   "buyer_value": 18
+  },
+  {
+   "id": "P42",
+   "list_price": 12.95,
+   "seller_cost": 7,
+   "buyer_value": 16
+  },
+  {
+   "id": "P43",
+   "list_price": 13.1,
+   "seller_cost": 8,
+   "buyer_value": 22
+  },
+  {
+   "id": "P44",
+   "list_price": 13.25,
+   "seller_cost": 8,
+   "buyer_value": 21
+  },
+  {
+   "id": "P45",
+   "list_price": 13.95,
+   "seller_cost": 8,
+   "buyer_value": 27
+  },
+  {
+   "id": "P46",
+   "list_price": 14.49,
+   "seller_cost": 8,
+   "buyer_value": 23
+  },
+  {
+   "id": "P47",
+   "list_price": 15.74,
+   "seller_cost": 9,
+   "buyer_value": 29,
+   "kind": "scarce"
+  },
+  {
+   "id": "P48",
+   "list_price": 16.95,
+   "seller_cost": 11,
+   "buyer_value": 28,
+   "kind": "monopoly"
+  },
+  {
+   "id": "P49",
+   "list_price": 16.99,
+   "seller_cost": 12,
+   "buyer_value": 32
+  },
+  {
+   "id": "P50",
+   "list_price": 17.5,
+   "seller_cost": 10,
+   "buyer_value": 34
+  },
+  {
+   "id": "P51",
+   "list_price": 18.99,
+   "seller_cost": 10,
+   "buyer_value": 33
+  },
+  {
+   "id": "P52",
+   "list_price": 19.5,
+   "seller_cost": 13,
+   "buyer_value": 31
+  },
+  {
+   "id": "P53",
+   "list_price": 19.98,
+   "seller_cost": 12,
+   "buyer_value": 39
+  },
+  {
+   "id": "P54",
+   "list_price": 21.99,
+   "seller_cost": 15,
+   "buyer_value": 41
+  },
+  {
+   "id": "P55",
+   "list_price": 22.5,
+   "seller_cost": 13,
+   "buyer_value": 28,
+   "kind": "oligopoly"
+  },
+  {
+   "id": "P56",
+   "list_price": 22.95,
+   "seller_cost": 13,
+   "buyer_value": 37,
+   "kind": "oligopoly"
+  },
+  {
+   "id": "P57",
+   "list_price": 23.28,
+   "seller_cost": 12,
+   "buyer_value": 42
+  },
+  {
+   "id": "P58",
+   "list_price": 23.79,
+   "seller_cost": 14,
+   "buyer_value": 37,
+   "kind": "monopoly",
+   "low_grade": true
+  },
+  {
+   "id": "P59",
+   "list_price": 24.0,
+   "seller_cost": 12,
+   "buyer_value": 29
+  },
+  {
+   "id": "P60",
+   "list_price": 26.66,
+   "seller_cost": 16,
+   "buyer_value": 52,
+   "kind": "oligopoly"
+  },
+  {
+   "id": "P61",
+   "list_price": 26.69,
+   "seller_cost": 14,
+   "buyer_value": 49
+  },
+  {
+   "id": "P62",
+   "list_price": 26.97,
+   "seller_cost": 15,
+   "buyer_value": 46,
+   "kind": "oligopoly",
+   "low_grade": true
+  },
+  {
+   "id": "P63",
+   "list_price": 27.0,
+   "seller_cost": 18,
+   "buyer_value": 53,
+   "kind": "scarce"
+  },
+  {
+   "id": "P64",
+   "list_price": 28.0,
+   "seller_cost": 18,
+   "buyer_value": 48
+  },
+  {
+   "id": "P65",
+   "list_price": 28.0,
+   "seller_cost": 15,
+   "buyer_value": 41,
+   "kind": "balanced",
+   "low_grade": true
+  },
+  {
+   "id": "P66",
+   "list_price": 29.95,
+   "seller_cost": 18,
+   "buyer_value": 54
+  },
+  {
+   "id": "P67",
+   "list_price": 30.95,
+   "seller_cost": 21,
+   "buyer_value": 49,
+   "kind": "competitive"
+  },
+  {
+   "id": "P68",
+   "list_price": 31.5,
+   "seller_cost": 20,
+   "buyer_value": 41,
+   "kind": "scarce"
+  },
+  {
+   "id": "P69",
+   "list_price": 33.0,
+   "seller_cost": 18,
+   "buyer_value": 55
+  },
+  {
+   "id": "P70",
+   "list_price": 34.0,
+   "seller_cost": 24,
+   "buyer_value": 65
+  },
+  {
+   "id": "P71",
+   "list_price": 36.0,
+   "seller_cost": 22,
+   "buyer_value": 46,
+   "kind": "scarce"
+  },
+  {
+   "id": "P72",
+   "list_price": 39.95,
+   "seller_cost": 25,
+   "buyer_value": 78,
+   "kind": "monopoly"
+  },
+  {
+   "id": "P73",
+   "list_price": 41.89,
+   "seller_cost": 28,
+   "buyer_value": 81
+  },
+  {
+   "id": "P74",
+   "list_price": 45.99,
+   "seller_cost": 26,
+   "buyer_value": 70
+  },
+  {
+   "id": "P75",
+   "list_price": 74.4,
+   "seller_cost": 49,
+   "buyer_value": 120
+  }
+ ]
+}

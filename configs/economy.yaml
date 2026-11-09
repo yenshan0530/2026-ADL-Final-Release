@@ -1,0 +1,89 @@
+# The whole class, for run_economy.py (the default config). These are the grading settings:
+#
+#   python run_economy.py --phase 1    # student sellers vs TA buyers
+#   python run_economy.py --phase 2    # TA sellers vs student buyers
+#   python run_economy.py --phase 3    # student sellers vs student buyers
+#
+# Locally with only your own agent, markets keep this size: seats your agents do not fill
+# are taken by TA agents (not graded). Every setting is in this file (no command-line
+# overrides): to try others, copy it (e.g. with `repeats: 1` for a quicker test) and run
+# with --config.
+#
+# Every market: 5 sellers and at least 10 buyers, 5 rounds of 6 turns, played once per seller
+# seat (rotation). Every economy: the 24 items with a `kind` in scenarios/public/items_example.json
+# (listed in docs/ITEMS.md), at their fixed prices. Each student agent plays its
+# LoRA with its first 3 personas. Model settings: configs/models.yaml (Qwen/Qwen3.5-4B,
+# temperature 0.7, top_p 0.95, 8192 tokens per reply and per round, 64000 context).
+# Every option: docs/CONFIG.md.
+
+name: economy
+seed: 0
+models: configs/models.yaml
+
+agents:
+  # TA agents, by regex (after `re:`; matches the whole path, relative to the repo root):
+  # the TA seller and buyer, each played with its 3 personas
+  ta:
+    sellers: ['re:agents/_ta/seller']     # fill short markets; grade anchors in phase 1
+    buyers: ['re:agents/_ta/buyer']       # opponents in phase 1; grade anchors in phase 2
+  # Students, by glob: every folder in agents/ except _ta ([!_]* skips names starting with _);
+  # uses <student>/seller/agent.yaml and <student>/buyer/agent.yaml, or just their LoRA + personas
+  student:
+    sellers: ["agents/[!_]*"]
+    buyers: ["agents/[!_]*"]
+    # or name them (paths), e.g.:
+    # sellers: [agents/example_student, agents/<student_id>/seller]
+
+sellers_per_market: 5
+buyers_per_market: 10
+repeats: 3                    # economies
+personas_per_student: 3
+rotate: true
+pad_sellers: true             # markets short of student sellers: TA sellers fill them
+pad_buyers: true              # markets short of student buyers: TA buyers fill them
+ta_anchors: true              # phases 1-2: TA agents of the graded role play among the students
+grading: {low_percentile: 10, low_score: 0.15, high_percentile: 80, high_score: 0.85}
+
+# Scores, transcripts and standings are always saved; full trajectories (every prompt) are
+# large: off for the whole class.
+save_trajectories: false
+
+market:
+  catalog: scenarios/public/catalog.yaml
+  rounds: {total: 5, turns_per_round: 6, output_tokens_per_round: 8192}
+  schema:
+    # Required. The item file: every economy plays its items that have a `kind`, at their
+    # fixed prices (low_grade: true = can be delivered in a low grade); nothing is drawn at
+    # random. One file for every economy, or a list with exactly `repeats` files, one per
+    # economy: [items_1.json, items_2.json, items_3.json].
+    items: scenarios/public/items_example.json
+    kinds:                        # which items have each kind: the item file
+      # sold by some sellers, dealt to the seller seats in item-file order
+      monopoly:    {sellers: one, supply_ratio: 1.0}   # 5 items, one per seller
+      oligopoly:   {sellers: 3, max_share: 0.5, supply_ratio: 1.0}   # 5 items, min(3, ceil(sellers / 2)) sellers each
+      # sold by every seller
+      scarce:      {supply_ratio: 0.6}                 # 5 items, 6 units per 10 buyers
+      competitive: {supply_ratio: 1.5}                 # 5 items, 15 units per 10 buyers
+      balanced:    {supply_ratio: 1.0}                 # 4 items, 10 units per 10 buyers
+    # 5 + 5 + 5 + 5 + 4 = 24 items; supply_ratio = units for sale / buyers in the market
+    budget_extra: 0.15        # buyer cash = 1.15 x sum(units x mean(cost, value)) / buyers
+    quality:                              # the 6 items with low_grade: true
+      low_utility: 0.4                    # low-grade unit utility x high-grade utility
+      low_cost: 0.5                       # low-grade unit cost x high-grade cost
+      certification: false                # sellers may mark units "certified high"
+      reviews: true                       # buyers may review trades (public)
+      disclosure: private                 # grade revealed to the buyer only, or public
+  market_overview: start                  # per-product totals in everyone's prompt
+  channels: {board: true, dm: true}
+  history_turns: 6                        # the last 6 turns verbatim (3, 6 and 10 performed alike)
+
+# Per-phase overrides, merged into `market` above.
+phase1:                   # --phase 1: student sellers vs TA buyers
+  market:
+    channels: {seller_room: true, buyer_room: false}
+phase2:                   # --phase 2: TA sellers vs student buyers
+  market:
+    channels: {seller_room: false, buyer_room: true}
+phase3:                   # --phase 3: student sellers vs student buyers
+  market:
+    channels: {seller_room: true, buyer_room: true}

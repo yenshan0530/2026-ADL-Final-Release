@@ -1,0 +1,60 @@
+# Model registry. Agents name a model here; they never contain URLs or keys.
+#
+# Local models run on vLLM (OpenAI-compatible): run_local.sh starts one, and --launch-vllm
+# starts the `serving` section below; LoRAs are loaded at runtime.
+# A hosted model reads its key from the env var in `api_key_env`; never write keys here.
+
+models:
+  # The base model students fine-tune (LoRA) and the default for LLM agents.
+  # Graded settings: thinking off unless an agent's agent.yaml says `reasoning: true` (sent
+  # as chat_template_kwargs.enable_thinking), to match a LoRA trained with thinking; replies
+  # are cut at max_tokens, which counts the thinking tokens too.
+  base:
+    model: Qwen/Qwen3.5-4B
+    base_url: http://localhost:8000/v1
+    max_tokens: 8192
+    temperature: 0.7
+    top_p: 0.95
+    # vLLM serves Qwen3.5 as its multimodal class (layers model.language_model.layers.*);
+    # LoRAs trained on the text model name them model.layers.*, which vLLM would silently
+    # ignore. The harness loads a renamed copy (students' files are not changed).
+    lora_rename: {"model.layers.": "model.language_model.layers."}
+
+  # Model behind the TA LLM personas. Same server as `base` by default; point it at a
+  # stronger model (or a hosted one) to make the TA opponents harder.
+  ta:
+    model: Qwen/Qwen3.5-4B
+    base_url: http://localhost:8000/v1
+    max_tokens: 8192
+    temperature: 0.7
+    top_p: 0.95
+    lora_rename: {"model.layers.": "model.language_model.layers."}
+
+  # ---- Your own models, for local testing only ----
+  # Add any OpenAI-compatible endpoint here (another vLLM server, a hosted API) to use as
+  # an opponent, teacher or baseline; agents name it in their agent.yaml (`model: <name>`).
+  # Graded agents always run `base` + the student's LoRA. Read keys from an environment
+  # variable (or .env) with `api_key_env`; never write a key in this file. For example:
+  #
+  # my_model:
+  #   model: <model name>
+  #   base_url: <https://.../v1>
+  #   api_key_env: MY_API_KEY
+  #   max_tokens: 8192
+
+# Local GPU serving (used by --launch-vllm). One vLLM server per entry of
+# `gpus`, each holding the base model once; every student LoRA is registered at runtime on
+# one of them and requests are routed there. Models above with the same weights and
+# address (here `base` and `ta`) share these servers.
+serving:
+  base:
+    gpus: [0]                 # e.g. [0, 1, 2, 3] for four replicas; ["0,1"] = one replica over 2 GPUs
+    port: 8000                # replica i listens on port + i
+    max_loras: 8              # adapters on the GPU at once (per batch)
+    max_cpu_loras: 64         # adapters cached in CPU RAM; others reload from disk
+    max_lora_rank: 64
+    gpu_memory_utilization: 0.85    # fits one 24GB GPU: weights ~9GB, KV cache ~250k tokens
+    max_model_len: 64000            # prompts reach ~20k tokens, plus up to 8192 for the reply
+    tool_call_parser: qwen3_coder   # Qwen3.5 writes tool calls as XML (<function=...>)
+    extra_args: [--language-model-only, --reasoning-parser, qwen3,
+                 --max-num-seqs, "64"]   # Qwen3.5's linear attention needs a cache slot per sequence

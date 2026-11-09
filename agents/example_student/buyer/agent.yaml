@@ -1,0 +1,8 @@
+# Sample submission: copy agents/example_student/ to agents/<your student ID>/ and replace
+# the files. A role folder holds:
+#   checkpoint/      your LoRA on Qwen/Qwen3.5-4B: adapter_config.json + adapter_model.safetensors
+#                    (this sample's is an untrained identity adapter: it plays like the base model)
+#   persona_1.md ... your personas, in the order to use them (grading plays the first three)
+#   agent.yaml       this file; optional. Its only setting: thinking mode.
+#
+reasoning: false     # play without thinking (the default); true if your LoRA was trained with it

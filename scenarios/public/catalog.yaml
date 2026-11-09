@@ -1,0 +1,1721 @@
+# Public catalog: all 75 items of the Amazon 2014 beauty selection
+# (one per Beauty category), cheapest first.
+# summary: a one-line description written by hand (what agents see by default).
+# price_imputed items use the median list price (10.01).
+products:
+- id: P01
+  asin: B00198ZPU2
+  title: Satin Edge Rubber Grip Cuticle Pusher and Spoon Nail Cleaner, 8 Ounce
+  summary: Rubber-grip cuticle pusher with a spoon end for cleaning under nails.
+  brand: Satin Edge
+  product_type: Cuticle Pushers
+  category: Cuticle Pushers
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Nail Tools
+  - Cuticle Pushers
+  reference_price: 0.79
+  price_imputed: false
+  average_rating: 4.64
+  review_count: 69
+  description: Satin edge rubber grip cuticle pusher and spoon nail cleaner whose spoon end cleans underneath
+    nails. Curved end shapes the cuticle. Won't scratch nail.
+- id: P02
+  asin: B00005304H
+  title: Q-tips Cotton Swabs, 500 Count
+  summary: Box of 500 pure-cotton swabs.
+  brand: Q-Tips
+  product_type: Cotton Swabs
+  category: Cotton Swabs
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Cotton & Swabs
+  - Cotton Swabs
+  reference_price: 1.35
+  price_imputed: false
+  average_rating: 4.33
+  review_count: 21
+  description: '&lt;P&gt;More Cotton At The Tip* Than Any Other Swab.&lt;/P&gt; &lt;P&gt;&lt;STRONG&gt;Q-tips&#xAE;&lt;/STRONG&gt;
+    Cotton Swabs are made with 100% pure cotton and have more soft cotton at the tip* than any other swab.&#xA0;
+    The firm paper stick gives gently under pressure, while a special adhesive secures the cotton to the
+    stick.&lt;/P&gt; &lt;P&gt;Ideal for the whole family, and not just for ears.&#xA0; Apply and remove
+    makeup or touch up a manicure.&#xA0; Gentle enough to care for newborn babies.&lt;/P&gt; &lt;P&gt;&lt;STRONG&gt;Q-tips&#xAE;&lt;/STRONG&gt;
+    Cotton Swabs are made with 100% natural materials, unlike some other cotton swab brands, and are biodegradable
+    when composted.&#xA0; Please support recycling in your community. &lt;/P&gt; &lt;P&gt;Q-tips Cotton
+    Swabs are ideal if the task requires a soft touch.&#xA0; There is no softer or safer swab.&lt;/P&gt;
+    &lt;P&gt;Handy Snap Lock Opening.&lt;/P&gt; &lt;P&gt;*From the end of the stick to the top of the
+    swab.&lt;/P&gt; &lt;P&gt;Made in the USA&lt;/P&gt;'
+- id: P03
+  asin: B003B7RMGO
+  title: ForPro Toe Separators 12-ct. Assorted Colors
+  summary: Pack of 12 soft toe separators in assorted colors, for pedicures.
+  brand: For Pro
+  product_type: Toe Separators
+  category: Toe Separators
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Nail Tools
+  - Toe Separators
+  reference_price: 1.67
+  price_imputed: false
+  average_rating: 2.67
+  review_count: 6
+  description: Premium Toe Separators are ultra soft and comfortable. Colors include lime, pink, purple
+    and aqua. Makes pedicures easy and professional. Assorted colors.
+- id: P04
+  asin: B009T47YZ2
+  title: World Pride Hot Lovely Metallic Sweet Lady Hollow Rose Flower Elastic Hair Band Headband - Gold
+  summary: Elastic headband with a metallic hollow rose.
+  brand: Bonamart
+  product_type: Headbands
+  category: Headbands
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Styling Accessories
+  - Headbands
+  reference_price: 1.72
+  price_imputed: false
+  average_rating: 3.45
+  review_count: 110
+  description: 'Package included: 1 rose headband'
+- id: P05
+  asin: B008TN1Z9U
+  title: 10x Black Spiral Hair Pin Clip Bun Stick Pick for DIY Hair Style / Sleek and Compact Alloy Construction,
+    Designed to Fit for All Hair Type, Especially for Long Hair
+  summary: Pack of 10 black spiral hair pins for quick buns.
+  brand: leegoal
+  product_type: Hair Pins
+  category: Hair Pins
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Styling Accessories
+  - Hair Pins
+  reference_price: 1.8
+  price_imputed: false
+  average_rating: 4.43
+  review_count: 7
+  description: 'Description:Flexible spiral hair clip will hold your hair well all the dayDesigned to
+    fit for all hair type, especially for long hairFast and easy to use for your perfect bun hair styleSpin
+    the hair pin clockwise into your styleTwist the pin counter-clockwise to release from your hair styleSleek
+    and compact alloy constructionColor: BlackQuantity: 10Size: Approx. 2.2 x 0.5 inch / 5.5 x 1.3 cmWay
+    to Use:Bunch your grasping hair and twist into a tight circlePick up the pin, twist clockwise into
+    you style. For a secure hold, twist the pin deep into your updo carching the hair against your headThen
+    finish the perfect simple hair style. Similar steps to complete other DIY updo hair stylesPackage
+    Includes:10 x Spiral Hair Clip'
+- id: P06
+  asin: B000YL8NOK
+  title: Swisspers Cotton Balls, Organic, 80 ct
+  summary: 80 organic cotton balls.
+  brand: Swisspers
+  product_type: Cotton Balls
+  category: Cotton Balls
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Cotton & Swabs
+  - Cotton Balls
+  reference_price: 1.97
+  price_imputed: false
+  average_rating: 4.75
+  review_count: 8
+  description: Certified OrganicSwisspers Organic cotton balls use only virgin staple fiber that makes
+    superior cotton balls that are noticeably softer. Grown Purely on Organic FarmsThe organic farming
+    methods replenish the soil, protect the purity of air, water and food supplies, and preserve precious
+    resources. Swisspers Organic cotton is grown by a cooperative of family-owned farms. These fields
+    are regularly inspected by independent certifiers to ensure the very highest standards of organic
+    practices.
+- id: P07
+  asin: B008U1Q4DI
+  title: SODIAL(R) 3000 Nail Art Gems Mixed Colours Shapes in Case (Size 2mm)
+  summary: Case of about 3000 tiny (2 mm) nail art gems in mixed colors and shapes.
+  brand: SODIAL(TM)
+  product_type: Nail Art
+  category: Nail Art
+  category_path:
+  - Beauty
+  - Makeup
+  - Nails
+  - Nail Art
+  reference_price: 2.23
+  price_imputed: false
+  average_rating: 4.45
+  review_count: 310
+  description: '* Beautiful decoration for your nails. Quantity are approximately.* They are reusable
+    if you are careful when taking them off.* You can use it for nail art or decoration of mobile phone,
+    ipod etc.* You can also use them to decorate home or made cards.* Colours shown may vary from photo.*
+    Contents: 3000 Nail Art Gems Round diamonds'
+- id: P08
+  asin: B003YTMG5Q
+  title: Hair Rollers - high-speed changing hair curlers Styling Rollers (16 Hair Rollers)
+  summary: Set of soft hair rollers with a hook tool, for heat-free curls.
+  brand: Unknown
+  product_type: Hair Rollers
+  category: Hair Rollers
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Hair Rollers
+  reference_price: 2.59
+  price_imputed: false
+  average_rating: 3.22
+  review_count: 18
+  description: 'Instant perm or ringlet curls! These are do-it-yourself, very easy to use hair rollers
+    that give you beautiful curls. 18 Hair Rollers in a package along with the hair feeding tool. There
+    are two different lengths; the long one is over 13" and the short one is over 7" in length. Flexible
+    braid is knitted by unfiled PET whose diameter is 0.25MM,The size of webmaster not only can be enlarged
+    to 150% of the Original size but also can easily tighten the various irregular objects. In the large
+    temperature range, webmaster will keep soft; restrain chemical corrosion, ultraviolet rays and friction.
+    It can be inhibit chemical corrosion, UV and friction. The unique net also has good ventilation effect
+    and heat dissipation. The product surface is smooth, color is bright, Material: Polyethylene Product
+    Features 1.Easy installation 2.High tensile strength 3.Anti-friction 4.Expandable to 150% 5.Without
+    halogen 6.By SGS, UL, RoHS certification 7.Maximum diameter of up to 3 inches 8.Operating temperature
+    range -103 F to 257 F (-75 C to 125 C) 9.Dissolution temperature of 446 F (230 C) Package includes:
+    1x Hair Roller wand 9x Small size Curlers (Color comes in random) 9x Large size Curlers (Color comes
+    in random)'
+- id: P09
+  asin: B008TNPX52
+  title: 500 Pcs Clear French Acrylic Style Artificial Half False Nails Nail Art Tips
+  summary: 500 clear half-cover false nail tips for French-style nail art.
+  brand: Yesurprise
+  product_type: False Nails
+  category: False Nails
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Nail Tools
+  - False Nails
+  reference_price: 2.91
+  price_imputed: false
+  average_rating: 3.95
+  review_count: 38
+  description: 500 Pcs Clear French Acrylic Style Artificial Half False Nails Nail Art Tips
+- id: P10
+  asin: B008BJ4SR8
+  title: 5pcs Nail Art Sable Acrylic Nail Brushes Pen Set with Cuticle Pusher Ends, 5 Sizes
+  summary: Set of 5 acrylic nail brushes in different sizes, with cuticle-pusher ends.
+  brand: Winstonia
+  product_type: Nail Brushes
+  category: Nail Brushes
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Nail Tools
+  - Nail Brushes
+  reference_price: 3.02
+  price_imputed: false
+  average_rating: 4.17
+  review_count: 12
+  description: Winstonia's 5 sizes Sable Acrylic Nail Brushes are the perfect tools for your UV gel application.
+    The brushes come with 5 different sizes in different colors, the end of the brushes also work as cuticle
+    pusher.Winstonia is a USA Seller, check out our feedback... we ship fast!!
+- id: P11
+  asin: B005GYL9C8
+  title: Housweety Unique Dots Pattern Double Layer Cosmetic Bag Black
+  summary: Black double-layer zippered cosmetic bag with a dot pattern.
+  brand: My Sky
+  product_type: Cosmetic Bags
+  category: Cosmetic Bags
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Bags & Cases
+  - Cosmetic Bags
+  reference_price: 3.08
+  price_imputed: false
+  average_rating: 4.31
+  review_count: 16
+  description: The zipper closure makes this cosmetic bag very convenientA must-have for organizing and
+    storing all your beauty essentialsSuitable for a professional stylist, or anyone on the go who needs
+    to organize their makeup Great for travel or display on your home dresserWith a mirror inside it.perfect
+    for applying makeup.
+- id: P12
+  asin: B0002KS5VE
+  title: Body Fantasies Body Spray for Women, Cotton Candy Fantasy Fragrance, 8 Ounce
+  summary: 8 oz cotton-candy body spray for women (fruity, sweet scent).
+  brand: Body Fantasies
+  product_type: Body Sprays
+  category: Body Sprays
+  category_path:
+  - Beauty
+  - Fragrance
+  - Women's
+  - Body Sprays
+  reference_price: 3.74
+  price_imputed: false
+  average_rating: 4.36
+  review_count: 28
+  description: 'Body Fantasies Cotton Candy Fantasy By Parfums De Coeur Body Spray 8 Oz For Women : This
+    is a Floral Fruity Gourmand fragrance for women. This fragrancehas notes of cotton candy, vanilla,
+    sugar cane, strawberry, raspberry and musk.'
+- id: P13
+  asin: B002RUH3OM
+  title: Peppermint 100% Pure Therapeutic Grade Essential Oil- 10 ml
+  summary: 10 ml bottle of pure peppermint essential oil.
+  brand: ''
+  product_type: Essential Oils
+  category: Essential Oils
+  category_path:
+  - Beauty
+  - Fragrance
+  - Women's
+  - Essential Oils
+  reference_price: 3.75
+  price_imputed: false
+  average_rating: 4.65
+  review_count: 34
+  description: '* The Peppermint plant is a summer-growing perennial with upright square stems reaching
+    three feet in height at maturity. * Botanical Name: Mentha piperita * Aromatic Aroma: Has strong minty
+    notes with herbaceous warm undertones. * Consistency: Thin * Note: Top * Aroma Strength: Strong *
+    Extraction Method: Steam Distilled * Plant Part: Herb * Origin: India * Color: Colorless to pale yellow
+    * Common Uses: It is widely credited with being a digestive aid. The leaves contain menthol, which
+    is a proven aid to digestion. The familiar aroma of Peppermint is known for both its warming and cooling
+    properties. Friendly to the sinuses, it is also useful to the muscular system, especially for women
+    during monthly cycles or menopause. Properties include being refreshing, a mental stimulant and energizing.
+    It relieves bad breath and is a good nerve tonic that helps with mental fatigue and nervous stress.
+    * Blends Well With: Basil, Bergamot, Cajeput, Cedarwood, Eucalyptus, Lemon, Lime, Mandarin, Pine,
+    Rosemary, Spearmint, Sweet Marjoram and Thyme. * History: Peppermint oil is one of the world''s oldest
+    medicinal herbs with documented use in ancient Egypt, Greece and Rome. * Cautions: Should be used
+    well diluted since high concentration can cause a burning sensation and sensitization. Avoid use during
+    pregnancy.'
+- id: P14
+  asin: B003COAFPQ
+  title: Tropic Isle Living Jamaican Black Castor Oil, 4 Ounce
+  summary: 4 oz Jamaican black castor oil, roasted the traditional way, for hair and skin.
+  brand: Tropic Isle
+  product_type: Oils
+  category: Oils
+  category_path:
+  - Beauty
+  - Skin Care
+  - Body
+  - Moisturizers
+  - Oils
+  reference_price: 3.88
+  price_imputed: false
+  average_rating: 4.33
+  review_count: 121
+  description: Tropic isle's living jamaican black castor oil is a rich, light brown oil which is processed
+    the old fashioned way by roasting the castor bean. Jamaican black castor oil origin can be traced
+    back to ethiopia, africa. It's believed that this natural castor oil originally came to jamaica from
+    slaves taken from africa. Jamaican elders didn't waste any time in discovering the various uses for
+    this oil. Black castor oil is a great addition to any hair or skincare regimen. This castor oil can
+    be use as is or add to your favorite hair products.
+- id: P15
+  asin: B005JRT7A8
+  title: NYX Matte Blotting Paper, White, 50 Count
+  summary: 50 oil-absorbing blotting papers that remove shine without removing makeup.
+  brand: NYX
+  product_type: Blotting Paper
+  category: Blotting Paper
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Makeup Brushes & Tools
+  - Blotting Paper
+  reference_price: 4.0
+  price_imputed: false
+  average_rating: 3.77
+  review_count: 13
+  description: Minimize shine on the nose, forehead and cheeks with our convenient blotting paper. The
+    oil-absorbing blotting paper sheets eliminate shine without removing your makeup.
+- id: P16
+  asin: B002L6NZ6C
+  title: Maybelline New York ColorSensational Lip Liner, Clear 10, 0.04 Ounce
+  summary: Clear lip liner that keeps lip color from feathering or bleeding.
+  brand: Maybelline
+  product_type: Lip Liners
+  category: Lip Liners
+  category_path:
+  - Beauty
+  - Makeup
+  - Lips
+  - Lip Liners
+  reference_price: 4.34
+  price_imputed: false
+  average_rating: 4.15
+  review_count: 13
+  description: 'Fall in love with color, all over again: keep your lipcolor looking beautiful with coordinating
+    lip liners that won&#x2019;t smudge, smear, feather or bleed.'
+- id: P17
+  asin: B00385WMIC
+  title: Betty Dain Stylish Design Mold Resistant Shower Cap, The Fashionista Collection, &quot;diva&quot;
+  summary: Fashion-print waterproof shower cap with a mold-resistant lining.
+  brand: Betty Dain
+  product_type: Shower Caps
+  category: Shower Caps
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Bathing Accessories
+  - Shower Caps
+  reference_price: 4.73
+  price_imputed: false
+  average_rating: 4.39
+  review_count: 18
+  description: The Betty Dain Fashionista Collection of Stylish Shower Caps shown here in the pattern
+    "Diva" offers a soft waterproof nylon exterior with a mold-resistant PEVA lining. It's the perfect
+    combination of style, comfort, and quality. The Fashionista Collection of Stylish Shower Caps comes
+    with stylish ruching and is trimmed in colorful satin with a matching bow. Additional pattern "Sassy
+    Stripes" available separately.
+- id: P18
+  asin: B000142C1A
+  title: Essie Nail Polish Marshmallow, .5 Ounce
+  summary: Essie nail polish in Marshmallow (sheer milky white), 0.5 oz.
+  brand: Essie
+  product_type: Nail Polish
+  category: Nail Polish
+  category_path:
+  - Beauty
+  - Makeup
+  - Nails
+  - Nail Polish
+  reference_price: 5.58
+  price_imputed: false
+  average_rating: 4.48
+  review_count: 114
+  description: 'These high-quality nail polishes were vote the "Best Overall Nail Polish Line" by InStyle
+    magazine. Essie pride themselves on producing great nail polishes that go on smooth and don''t leave
+    streaks. Celebrities who use Essie: Kristin Davis, Debra Messing, Britney Spears, Jennifer Lopez,
+    Sharon Stone, Oprah Winfrey and Naomi Campbell ! What''s in a name? Each season Essie Weingarten has
+    the difficult task of naming six new colors of polish. Naming a polish is tricky; however the key
+    to the success of Essie Cosmetics is not only the glorious colors, but the descriptive memorable names.'
+- id: P19
+  asin: B001BKFF76
+  title: Aquasentials Moisturizing Gloves
+  summary: Cotton moisturizing gloves to wear over lotion.
+  brand: ''
+  product_type: Moisturizing Gloves
+  category: Moisturizing Gloves
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Moisturizing Gloves
+  reference_price: 5.69
+  price_imputed: false
+  average_rating: 3.75
+  review_count: 20
+  description: Enjoy a repair session with this Moisturizing Gloves. Simply apply your favorite lotion
+    or cream then let the glove do its work.
+- id: P20
+  asin: B005FYJB92
+  title: NYX Matte Lipstick, Nude
+  summary: NYX matte lipstick in a nude shade.
+  brand: NYX
+  product_type: Lipstick
+  category: Lipstick
+  category_path:
+  - Beauty
+  - Makeup
+  - Lips
+  - Lipstick
+  reference_price: 5.88
+  price_imputed: false
+  average_rating: 3.94
+  review_count: 164
+  description: NYX matte lipsticks are highly pigmented, richly formulated lipsticks that glide on smoothly,
+    stay put and impart a non-glossy, high-fashion matte finish as they envelop lips in brilliant color.
+    From pure red to nude, matte lipstick is available in 22 rich, shades.
+- id: P21
+  asin: B000F6RFX4
+  title: Adovia Natural Dead Sea Mud Soap - Great for Eczema, Psoriasis or Acne! 125 GR (4.4OZ)
+  summary: Dead Sea mud soap bar (4.4 oz), sold for eczema, psoriasis and acne.
+  brand: Adovia
+  product_type: Soaps
+  category: Soaps
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Cleansers
+  - Soaps
+  reference_price: 6.0
+  price_imputed: false
+  average_rating: 4.59
+  review_count: 92
+  description: Our All Natural Black Mud Soap contains a unique combination of Dead Sea minerals derived
+    from Dead Sea Mud. This effective mud soap removes dirt and cleanses your skin, while simultaneously
+    infusing it with minerals essential to keeping your skin hydrated and moisturized. Our Dead Sea mud
+    soap is enriched with century old Dead Sea mud, leaving your skin cleansed and nourished. As more
+    people are learning about the healing and beauty effects of black mud from The Dead Sea, this soap
+    is becoming a very popular choice for skin care conscious people.
+- id: P22
+  asin: B000FZDPX4
+  title: Essie Ridge Filler Base Coat, 0.46 oz
+  summary: Essie ridge-filler base coat that smooths uneven nails before polish.
+  brand: Essie
+  product_type: Ridge Filler
+  category: Ridge Filler
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Nail Treatments
+  - Ridge Filler
+  reference_price: 6.12
+  price_imputed: false
+  average_rating: 4.88
+  review_count: 8
+  description: The ultimate nail foundation for nails with ridges. Gives natural nails with ridges or
+    discoloration a smooth, even base. Its ingredients leave a translucent finish, the perfect base for
+    manicures
+- id: P23
+  asin: B0075J4TDI
+  title: Nivea Body Touch of Renewal Lathering Body Scrub, 12 Ounce
+  summary: 12 oz Nivea exfoliating body scrub that lathers like a body wash.
+  brand: Nivea
+  product_type: Body Scrubs
+  category: Body Scrubs
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Scrubs & Body Treatments
+  - Body Scrubs
+  reference_price: 6.46
+  price_imputed: false
+  average_rating: 4.4
+  review_count: 42
+  description: Nivea touch of renewal lathering body scrub featuring hydra IQ technology delivers an unmatched
+    balance of exfolication. Body scrub with hydra iq. Provides exfoliation of a scrub combined with rich
+    luxurious lather. Leaves your skin feeling healthy and beautiful with no greasy feel.
+- id: P24
+  asin: B00AUFSOU8
+  title: L'Oreal Paris Colour Caresse Wet Shine Lip Stain, Pink Resistance, 0.21 Ounces
+  summary: L'Oreal lip stain with gloss-like shine, in Pink Resistance.
+  brand: L&#39;Oreal Paris
+  product_type: Lip Stains
+  category: Lip Stains
+  category_path:
+  - Beauty
+  - Makeup
+  - Lips
+  - Lip Stains
+  reference_price: 6.67
+  price_imputed: false
+  average_rating: 3.68
+  review_count: 22
+  description: Discover a stain that thinks it's a gloss. Now hydration and shine meet lasting, lightweight
+    color. Color caress by color riche shine stain combines the power of a lip stain with lip-gloss luster.
+    This next generation lip stain, formulated with a blend of light hydrating oils and concentrated pigments,
+    delivers lasting color with a glossy finish. Packed with 30% water, color caress shine stain leaves
+    lips soft, comfortable and hydrated for up to 6 hours.
+- id: P25
+  asin: B00AIQOKDY
+  title: Lysol Touch of Foam Foaming Hand Soap, Creamy Vanilla Orchid, Pump, 8.5 Ounce
+  summary: Lysol foaming antibacterial hand soap pump, vanilla orchid scent.
+  brand: Lysol
+  product_type: Hand Soaps
+  category: Hand Soaps
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Hand Soaps
+  reference_price: 6.68
+  price_imputed: false
+  average_rating: 4.4
+  review_count: 60
+  description: Lysol touch of foam foaming hand soap pump creamy vanilla orchid 8.5 ounce. Kills 99.9%
+    of bacounteria on hands. Enriched with moisturizing ingredients.
+- id: P26
+  asin: B000WYZ9Q4
+  title: NYX Doll Eye Mascara, Extreme Black, Volume, DE02, 0.28 oz
+  summary: NYX volumizing mascara in extreme black, with lash-extending fibers.
+  brand: NYX
+  product_type: Mascara
+  category: Mascara
+  category_path:
+  - Beauty
+  - Makeup
+  - Eyes
+  - Mascara
+  reference_price: 7.14
+  price_imputed: false
+  average_rating: 3.86
+  review_count: 119
+  description: Hello doll-face! For irresistibly fluttery eyelashes, try this mascara on for size. Doll
+    eye mascara uses a unique blend of natural oils, vitamin E and nylon fibers to extend eyelashes to
+    almost faux proportions. This mascara will add the volume in your lashes that you desire.
+- id: P27
+  asin: B0030HKJ8I
+  title: Maybelline New York Eye Studio Lasting Drama Gel Eyeliner, Eggplant 956, 0.106 Ounce
+  summary: Maybelline 24-hour waterproof gel eyeliner in eggplant.
+  brand: Maybelline
+  product_type: Eyeliner
+  category: Eyeliner
+  category_path:
+  - Beauty
+  - Makeup
+  - Eyes
+  - Eyeliner
+  reference_price: 7.57
+  price_imputed: false
+  average_rating: 4.32
+  review_count: 145
+  description: The most intense line for lasting drama. Eye studio lasting drama gel eyeliner holds highly
+    concentrated pigments in a clear gel base, so color is more intense and lines resist wear for 24 hours.
+    Smudge proof and waterproof.
+- id: P28
+  asin: B001FWXJ4G
+  title: Sunburnt Therapeutic After Sun Relief, 6-Ounce Tube
+  summary: 6 oz after-sun lotion that soothes sunburn and peeling skin.
+  brand: Sunburnt
+  product_type: After Sun
+  category: After Sun
+  category_path:
+  - Beauty
+  - Skin Care
+  - Sun
+  - After Sun
+  reference_price: 7.85
+  price_imputed: false
+  average_rating: 4.39
+  review_count: 75
+  description: Too much time in the Sun can wreak havoc on our skin, causing painful sunburn, dryness
+    and insightly peeling. SunBurnt&#x2122; Therapeutic After Sun Relief helps your skin recover from
+    an afternoon at the beach, in the garden or at a ballgame. With all-natural homeopathic active ingredients,
+    SunBurnt&#x2122; will cool overheated skin, soothe and hydrate sunburned skin, and help to reduce
+    skin peeling.
+- id: P29
+  asin: B002OVV7F0
+  title: NYX Cosmetics Eye Shadow Palette 10 Color, Jazz Night, 0.49-Ounce
+  summary: NYX palette of 10 bold, highly pigmented eye shadows (Jazz Night).
+  brand: NYX
+  product_type: Eye Shadow
+  category: Eye Shadow
+  category_path:
+  - Beauty
+  - Makeup
+  - Eyes
+  - Eye Shadow
+  reference_price: 7.97
+  price_imputed: false
+  average_rating: 4.27
+  review_count: 107
+  description: Ten shades of eye shadow that features bold combinations, high pigmentation and lasting
+    wear. Shade selections are inspired by colors and fashion form around the world. Sleek case includes
+    a double ended sponge applicator. Perfect for application on the go.
+- id: P30
+  asin: B004DIXYUI
+  title: elf Studio High Definition Loose Face Powder
+  summary: e.l.f. translucent loose powder for a soft-focus, matte finish.
+  brand: e.l.f. Cosmetics
+  product_type: Powder
+  category: Powder
+  category_path:
+  - Beauty
+  - Makeup
+  - Face
+  - Powder
+  reference_price: 8.98
+  price_imputed: false
+  average_rating: 4.11
+  review_count: 114
+  description: The e.l.f. High Definition Powder is a translucent, versatile loose powder that creates
+    a flawless, "soft focus" effect to the skin. Masks fine lines and imperfections for a glowing, radiant
+    complexion. This incredibly soft and invisible powder is ideal for everyday wear, either alone or
+    over your favorite e.l.f. foundation. Our HD Powder is a makeup artist and e.l.f. customer favorite.
+- id: P31
+  asin: B003SSTKHU
+  title: Vivo Per Lei Moisturizing Day Cream, 1.7-Fluid Ounce
+  summary: 1.7 oz light moisturizing day cream.
+  brand: Vivo Per Lei
+  product_type: Day Creams
+  category: Day Creams
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Creams & Moisturizers
+  - Day Creams
+  reference_price: 8.99
+  price_imputed: false
+  average_rating: 4.4
+  review_count: 20
+  description: Luxuriously light day cream provides immediate day-long moisture and replenishment, leaving
+    skin looking and feeling softer and more radiant
+- id: P32
+  asin: B0063A432W
+  title: Banana Boat Sport Cool Zone Sunscreen Continuous Spray SPF 50, 6 Fluid Ounce
+  summary: Banana Boat SPF 50 sport sunscreen spray with a cooling effect.
+  brand: Banana Boat
+  product_type: Sports
+  category: Sports
+  category_path:
+  - Beauty
+  - Skin Care
+  - Sun
+  - Skin Protection
+  - Sports
+  reference_price: 9.54
+  price_imputed: false
+  average_rating: 4.19
+  review_count: 240
+  description: BANANA BOAT sunscreen ultra mist sport performance cool zone, SPF 50, 6-ounces. Long-lasting
+    continuous spray sunscreen. Cool zone instantly cools and refreshes skin. Broad spectrum UVA or UVB
+    protection. Invisible, rub-free, quick drying, and non-greasy. Very water or sweat resistant.
+- id: P33
+  asin: B000052YM7
+  title: Alpha Hydrox Enhanced Lotion 10 percent Glycolic AHA -- 6 fl oz Anti-Wrinkle
+  summary: 6 oz anti-wrinkle lotion with 10% glycolic acid.
+  brand: Alpha Hydrox
+  product_type: Lotions
+  category: Lotions
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Creams & Moisturizers
+  - Fluids & Lotions
+  - Lotions
+  reference_price: 9.67
+  price_imputed: false
+  average_rating: 4.01
+  review_count: 93
+  description: Concentrated pure glycolic acid (one of the most effective alpha hydroxy acids on the market)
+    works diligently on your complexion, leaving skin visibly firmer, smoother, and more refined with
+    a simple, once-a-day application of this treatment lotion. For added moisturizing benefits, pure vitamin
+    E--long known to beautifully rehydrate skin--is also a key ingredient.10% AHA Anti-Wrinkle Treatment.Recommended
+    for:&nbsp; &nbsp;Dry to Normal Skin Types.&nbsp;Not for use on delicate/sensitive skin.Absorbs quickly.&nbsp;
+    Fragrance-free.&nbsp; Effective pH 4.Proven to significantly reduce the appearance of fine lines and
+    wrinkles.Safely lifts dead cells from the skin's surface to revitalize and help restore youthful,
+    healthy, radiant-looking skin.Renews moisture, refines texture, improves elasticity and skin tone.Specially
+    formulated with rich moisturizers and Vitamin E.Contains 10% pure Glycolic-AHA.The exfoliating effect
+    of Alpha Hydrox Enhanced Lotion is also beneficial for use on the legs, arms and body.&nbsp; Its rich
+    moisturizers and alpha hydroxy provide soft, smooth, silky skin when used on these areas.
+- id: P34
+  asin: B003O4H2L4
+  title: CND Cuticle Remover - 6oz
+  summary: 6 oz professional cuticle remover and callus softener with aloe.
+  brand: CND Cosmetics
+  product_type: Cuticle Removers
+  category: Cuticle Removers
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Cuticle Care
+  - Cuticle Removers
+  reference_price: 9.7
+  price_imputed: false
+  average_rating: 4.8
+  review_count: 15
+  description: An extremely effective professional cuticle remover and callus softener. Formulated with
+    aloe vera to help prevent over-drying of the skin and nails.
+- id: P35
+  asin: B00B8Z2LRQ
+  title: Pink Armor Nail Growth Formula Treatments, 0.50 Fluid Ounce
+  summary: Nail growth treatment that strengthens nails with a glossy gel-like coat.
+  brand: Pink Armor
+  product_type: Growth Formula
+  category: Growth Formula
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Nail Treatments
+  - Growth Formula
+  reference_price: 9.8
+  price_imputed: false
+  average_rating: 4.43
+  review_count: 21
+  description: Strong, beautiful nails fast. Quick and easy gel coat. Strengthens and protects. Repairs
+    and restores. Promotes nail growth. Glossy gel-nail finish.
+- id: P36
+  asin: B003N4RGIO
+  title: Cinema Secrets Stainless Steel Makeup Palette, Small
+  summary: Small stainless-steel palette for mixing makeup.
+  brand: Cinema Secrets
+  product_type: Makeup Palettes
+  category: Makeup Palettes
+  category_path:
+  - Beauty
+  - Makeup
+  - Makeup Palettes
+  reference_price: 9.95
+  price_imputed: false
+  average_rating: 4.44
+  review_count: 9
+  description: 'Specifically designed for use with a makeup spatula, Cinemas Secrets Makeup Palettes are
+    used to quickly, cleanly mix cosmetics. Cosmetics are transferred to the palette by a clean stainless
+    steel spatula, then mixed and transferred to brush, sponge, or puff for application. Medical-grade
+    stainless steel prevents natural oils from chemically changing the makeup--and does not allow cross-contamination.
+    This extends the life of cosmetics and ensures professional-level sanitation. Innovated by Cinema
+    Secrets founder Maurice Stein, who based his tools on the implements used by dentists, this product
+    paved the way for a variety of stainless steel makeup artist tools that have since become industry
+    standards. Dimensions: 2 15/16" x 4 1/2". Sold individually'
+- id: P37
+  asin: B007JXZ88K
+  title: L. Erickson Ponytail Holders - Set of Eight - Purple
+  summary: Set of eight thick purple ponytail holders that do not damage hair.
+  brand: ''
+  product_type: Ponytail Holders
+  category: Ponytail Holders
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Styling Accessories
+  - Ponytail Holders
+  reference_price: 10.0
+  price_imputed: false
+  average_rating: 4.8
+  review_count: 5
+  description: L. Erickson Ponytail Holders are a must-have addition to your collection. Made of thick,
+    non-damaging elastic, the ponytail holders will pull back your hair with effortless ease. Available
+    in a variety of colors to complement any ensemble, these versatile ponies are perfect for on-the-go
+    styling.
+- id: P38
+  asin: B007UZO2G6
+  title: SHANY Cosmetics All Black Light Weighted Makeup Train Case, Moonless Night
+  summary: Black lightweight makeup train case for organizing cosmetics.
+  brand: ''
+  product_type: Train Cases
+  category: Train Cases
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Bags & Cases
+  - Train Cases
+  reference_price: 10.01
+  price_imputed: true
+  average_rating: 4.9
+  review_count: 21
+  description: Its one of our best in this class, designed for beginners who want to save money, but also
+    want to get a premium product. Shany Moonless night makeup case was specially designed for Pro member
+    of beauty schools, however since it turned out to be a favorite train case, we started the mass production.
+    due to this matter we are able to offer it at a great price, enjoy it.
+- id: P39
+  asin: B002RS6JW6
+  title: TIGI Bed Head Hard Head Hair Spray, 10.6 Ounce
+  summary: TIGI Bed Head strong-hold hair spray, 10.6 oz.
+  brand: Tigi
+  product_type: Hair Sprays
+  category: Hair Sprays
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Products
+  - Hair Sprays
+  reference_price: 10.02
+  price_imputed: false
+  average_rating: 4.23
+  review_count: 22
+  description: This 10.6-oz can of Bed Head Hard Head Hair Spray will give you the style you want and
+    keep it there. Bed Head TIGI Hair Spray is long lasting and provides a strong hold. Bed Head Hair
+    Spray lets you achieve many different styles and keeps your hair looking good all day and night.
+- id: P40
+  asin: B0002260DW
+  title: Sex Bomb Bath Bomb by LUSH
+  summary: LUSH Sex Bomb bath bomb, jasmine-scented with soya milk.
+  brand: LUSH Cosmetics
+  product_type: Bath Bombs
+  category: Bath Bombs
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Bath
+  - Bath Bombs
+  reference_price: 10.76
+  price_imputed: false
+  average_rating: 5.0
+  review_count: 11
+  description: 'Features Appropriately named: It''s called Sex Bomb for a reason; we''ll leave it at that.
+    Fizzy seduction: Soya milk makes hot bodies smooth as silk. Love potion: Known as a powerful aphrodisiac,
+    we use jasmine to stir up passions.'
+- id: P41
+  asin: B000ULLKMG
+  title: Qtica Intense Cuticle Repair Balm
+  summary: Rich overnight balm with vitamins A, D and E for dry, damaged cuticles.
+  brand: QTICA
+  product_type: Cuticle Repair
+  category: Cuticle Repair
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Cuticle Care
+  - Cuticle Repair
+  reference_price: 12.31
+  price_imputed: false
+  average_rating: 4.0
+  review_count: 8
+  description: Qtica Intense Cuticle Repair Balm A rich luscious, intense night time cuticle treatment
+    which uses a natural combination of vitamins A,D,E and Panthanol (B-complex) to heal, soothe and remove
+    dry, damaged cuticles and hang nails. (0.5 oz.)
+- id: P42
+  asin: B00GP184WO
+  title: Sleep Mask with Ear Plugs - This Eye Mask Is for Sleeping Better Anywhere - On Travel - Long
+    Flights - Short Naps - Blocks Light Fully - Helps with Insomnia and Other Sleep Disorders - Super
+    Lightweight - Soft &amp; Comfortable - Wide Strap with Velcro and Earplugs Holder - Extreme Quality
+    &amp; Comfort - Satisfaction Guaranteed
+  summary: Contoured sleep mask with ear plugs, for travel and blocking light.
+  brand: ''
+  product_type: Eye Masks
+  category: Eye Masks
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Bathing Accessories
+  - Eye Masks
+  reference_price: 12.95
+  price_imputed: false
+  average_rating: 4.5
+  review_count: 10
+  description: Do you want to sleep better? Get the best sleep mask on the market and be well rested!You
+    may have bought a sleep mask in the past, only to find that it was poor quality, didn't fit, let in
+    light, was uncomfortable, ruined makeup and worst of all, broke after a few uses. Not so with this
+    mask!Want the best? Get the benefits of this mask now- Itactuallyblocks all light- It is soft and
+    feather light- It is comfortable and lets you sleep really well- Our buyers love it and so will you-
+    It is perfect for children, women and men, and easily adjusts to all head sizes- Has a fast and convenient
+    velcro fastener- The sturdy wide strap is comfortable, well attached and holds the mask exactly where
+    you want it, even when you toss and turn- The strap has 2 snazzy holders for your ear plugs, so they
+    never get lost or misplacedThe sturdy construction using soft and light weight materials makes the
+    mask super light weight, very flexible and allows it to breathe really well. This makes it comfortable
+    all night, cool around the eyes and safe for makeup. It easily fits into your bag, is easily washable,
+    and comes with clear instructions on how to best use both mask and ear plugs for best results and
+    sleep uninterrupted by light or noise.Satisfaction GuaranteedWhen you order now, know that you are
+    protected by a 30 days no questions asked full money back guarantee. Your satisfaction is our goal.Get
+    more than one and saveWant more than one? Get two for $11 each, or 5 for $10 each.Bonus OfferYou get
+    the best sleep mask with aRISK FREE 100% money back guarantee. You also get theear plugsand aneBook
+    with natural sleep tipsto help you sleep even better.ClickAdd to Cartat the top of this page and get
+    yours now.
+- id: P43
+  asin: B0012JY4G4
+  title: Color Oops Hair Color Remover Extra Strength 1 Application
+  summary: Color Oops extra-strength hair color remover, one application.
+  brand: Developlus
+  product_type: Hair Color Removers
+  category: Hair Color Removers
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Hair Coloring Tools
+  - Hair Color Removers
+  reference_price: 13.1
+  price_imputed: false
+  average_rating: 3.81
+  review_count: 31
+  description: 'COLOR OOPS HR CLR REMOVER XTRA Size: 1'
+- id: P44
+  asin: B004SPDEWE
+  title: Mary Kay Foundation Primer Sunscreen Broad Spectrum SPF 15 1 fluid ounce
+  summary: Mary Kay foundation primer with SPF 15 for a smooth, long-lasting base.
+  brand: Mary Kay
+  product_type: Foundation Primers
+  category: Foundation Primers
+  category_path:
+  - Beauty
+  - Makeup
+  - Face
+  - Foundation Primers
+  reference_price: 13.25
+  price_imputed: false
+  average_rating: 4.67
+  review_count: 15
+  description: This lightweight gel glides on easily to fill in imperfections and dries quickly to a matte
+    finish to create the perfect canvas for a flawless foundation application that enhances foundation
+    benefits and extends wear.Foundation primers have been a secret of professional makeup artists for
+    years to give models and celebrities flawless looking skin. Mary Kay Foundation Primer SPF 15* perfects
+    skin as it enhances foundation benefits and extends foundation wear. In fact, some women who tried
+    the product believed that Mary Kay Foundation Primer helped foundation maintain an acceptable appearance
+    for nine hours or more.
+- id: P45
+  asin: B000050B6U
+  title: Instant Heat Curling Iron, 1-Inch
+  summary: 1-inch curling iron that heats in under a minute, 25 temperature settings.
+  brand: Conair
+  product_type: Curling Irons
+  category: Curling Irons
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Irons
+  - Curling Irons
+  reference_price: 13.95
+  price_imputed: false
+  average_rating: 4.31
+  review_count: 51
+  description: Welcome to the world of advanced styling, where curling irons heat up in less than a minute,
+    where you can choose between 25 different temperature settings for any hair type, and where, if left
+    unattended, your curling iron automatically turns off. Conair's 1-inch curling iron is ideal for creating
+    those medium-to-large bouncing curls. Featuring dual voltage settings, the iron allows you to select
+    either standard North American 125-volt or 250-volt foreign electricity operation, so you can use
+    your curler when you're traveling abroad. Its sure-grip handle has a patented design for greater control
+    and precision, and the electronic on/off touch pad is easy to use. If you forget to turn off the curler
+    (too busy fending off your admirers, we assume), it will automatically shut itself off. With that
+    60-second heat-up time and a flashing indicator light that lets you know when you can start styling,
+    you'll have playful curls to impress within minutes. And with a two-year limited warranty, you'll
+    be curling for years to come.--Ariel Meadow Stallings
+- id: P46
+  asin: B00005O0MZ
+  title: Conair 1875 Watt Ionic Conditioning Hair Dryer
+  summary: Conair 1875 W ionic hair dryer that conditions while drying.
+  brand: Conair
+  product_type: Hair Dryers
+  category: Hair Dryers
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Hair Dryers
+  reference_price: 14.49
+  price_imputed: false
+  average_rating: 4.21
+  review_count: 42
+  description: Dry your hair and improve its health at the same time with this ionizing hair dryer from
+    Conair. Built with a motor that's no louder than a low office hum, this dryer has a sleek, comfortable
+    design and convenient, versatile functions. The most striking feature is the optional ion disperser,
+    which coats hair with a cloud of negative ions to reduce frizziness, static electricity, flyaways,
+    and dullness. The dryer also features two heat/speed settings and a cool-shot button to freeze styles
+    in place. Designed to dry hair faster and maximize volume, the diffuser attaches easily and has a
+    wide, narrow mouth, so the flow of air distributes to upper and lower layers simultaneously. The unit's
+    hinged filter removes for easy maintenance, and the automatic shutoff disables power if the dryer
+    falls or gets wet. An out-of-the-way hanging hook simplifies storage and reduces wear and tear on
+    the cord.--Emily Bedard
+- id: P47
+  asin: B00C2AYH3W
+  title: Zoya Remove Plus Nail Polish Remover in Big Flipper 8 oz
+  summary: 8 oz Zoya 3-in-1 nail polish remover, prep and conditioner.
+  brand: Zoya
+  product_type: Nail Polish Remover
+  category: Nail Polish Remover
+  category_path:
+  - Beauty
+  - Makeup
+  - Nails
+  - Nail Polish Remover
+  reference_price: 15.74
+  price_imputed: false
+  average_rating: 4.45
+  review_count: 22
+  description: Zoya Remove Plus is an award wining, gentle, yet highly effective 3-in-1 nail polish remover,
+    nail prep and nail conditioner. Longer nail polish wear starts with Remove Plus. Now get Zoya Remove
+    Plus packaged in the portable, spill-proof 8oz Big Flipper pump container. Great lavender scent. Polish
+    remover is just the beginning of what this wonder 3-in-1 formula achieves. Clean and prep nails while
+    moisturizing, nourishing and fortifying the nail plate for guaranteed extended polish wear. Nails
+    are left without a trace of nail lacquer, without streaking or staining, hydrated and ready for a
+    base coat. Thoroughly saturate a cotton ball or pad with Zoya Remove Plus, firmly press pad to nail
+    for a few seconds and wipe until existing polish is completely removed and nail bed is clean. Remove
+    surface oils from clean nails and prepare nails for new color by wiping each nail with Zoya Remove.
+    8 oz Please, note&#0058; This item can be shipp ed to 48 contiguous United States via Ground Service
+    only.
+- id: P48
+  asin: B008MP481M
+  title: Luxury Spa Bath Pillow Large
+  summary: Large spa bath pillow with suction cups, cushions head, neck and shoulders.
+  brand: ''
+  product_type: Bath Pillows
+  category: Bath Pillows
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Bathing Accessories
+  - Bath Pillows
+  reference_price: 16.95
+  price_imputed: false
+  average_rating: 4.29
+  review_count: 35
+  description: The everyday bath becomes a luxurious spa escape as the Epica cushions your head, neck
+    and shoulders in ultimate comfort. No worries about slipping, either...it's held securely in place
+    with 7 suction cups.2-Section Design for Superior SupportUnlike flat pillows, the Epica bends around
+    the edge of the tub, protecting both head and neck from hard surfaces and allowing for deep relaxation.
+    The flexible hinge is adaptable to any tub shape including Roman tubs, air jet tubs and jacuzzis.Foam
+    Fill for Solid ComfortThe interior resilience and support have also been upgraded, with foam fill
+    that performs like a real pillow, without having to be inflated or guarded against punctures like
+    an air pillow.7 Suction Cups (2 on the top section, 5 on the bottom section)You may have been disappointed
+    with bath pillows that only have 2 or 3 suction cups, sliding out from under you just as you start
+    to relax. That's why the Epica has a full 7 suction cups, to make sure that it will stay in your perfect
+    position throughout your bath experience. Simply wet them first before pressing them onto the tub
+    to ensure a tight seal.Easy Maintenance Vinyl CoverThe wipe-clean vinyl is chemical and odor resistant,
+    and dries out faster than cloth covers to prevent mildew growth. As you rest on it, it will match
+    your body temperature, creating a soft, warm nest for your head and shoulders.Light some scented candles,
+    put on some soft music, pour in the bath salts, lie back...and enjoy!
+- id: P49
+  asin: B0061YRVOC
+  title: SHANY Cosmetics Feather Hair Extension Kit, 8 Ounce (Feather Hair, Hook, Beads, Feather Grizzly
+    Solid Mix All-In-One) -100 Piece
+  summary: Kit of 100 synthetic feather hair extensions with hook and beads.
+  brand: SHANY Cosmetics
+  product_type: Hair Extensions
+  category: Hair Extensions
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Products
+  - Hair Extensions & Wigs
+  - Hair Extensions
+  reference_price: 16.99
+  price_imputed: false
+  average_rating: 4.66
+  review_count: 64
+  description: 100 piece Shany feather hair extension. Shampoo it, iron it, and even cut it. Synthetic
+    feather extension. Complete kit that brings you all you need to get the job done. The set comes with
+    10 grizzly strips at least 18 inches long and up, mixed colors feather extension, 5 medium size one
+    of a kind rooster feather in assorted colors and styles, and 5 fashion animal print feather extension
+    just like picture, and additional 10 solid feather extension. You will also receive lots of beads
+    in 4-5 colors and 1 hook. The starter kit is a great kit for feather lovers. All feathers are keratin
+    bonded and ready to use. Colors and styles as pictures, however no two feathers are alike, so there
+    could be some differences in each order, however we have inspected each set to make sure they all
+    look just like picture.
+- id: P50
+  asin: B000GZJJ38
+  title: California Baby Bubble Bath Aromatherapy, 13 oz (Eucalyptus ease (for tranquil relief))
+  summary: 13 oz eucalyptus aromatherapy bubble bath, safe for babies.
+  brand: California Baby
+  product_type: Bubble Bath
+  category: Bubble Bath
+  category_path:
+  - Beauty
+  - Bath & Body
+  - Bath
+  - Bubble Bath
+  reference_price: 17.5
+  price_imputed: false
+  average_rating: 4.5
+  review_count: 6
+  description: 13 oz / 390 ml bottle with twist cap. Safe for newborns and older. Use when you feel the
+    sniffles and sneezies coming on! Scented with Douglas fir and eucalyptus. Nothing is worse than the
+    sight (especially at 2:00 a.m.!) of a sick child. We formulate our products to work, and California
+    Baby Colds & Flu Bubble Bath is a lifesaver when your child is congested and cranky--who can resist
+    a bubble bath? A warm bubble bath can help to lower a temperature and ease muscle aches. Children-and
+    adults!-love bubble baths, so we make them safe. Our special bubbling formula contains mild vegetable-derived
+    bubbling agents, enriched with a nourishing herbal complex that works to protect delicate skin. Our
+    non-drying (extremely) biodegradable bubble bath strictly avoids the use of synthetic fragrances and
+    harsh bubbling agents. This product was developed to avoid irritation (that is typical of other bubble
+    baths) and we never use Sodium lauryl sulfate, DEA or numbing agents. No nut oils, gluten, soy, oat
+    or dairy. Made in the U.S.A.
+- id: P51
+  asin: B0052TLJEU
+  title: Gold N' Hot GH3013 Gold Tone Crimping Iron, 2 Inch
+  summary: 2-inch gold-tone crimping iron for crimped volume.
+  brand: Gold N Hot
+  product_type: Crimping Irons
+  category: Crimping Irons
+  category_path:
+  - Beauty
+  - Hair Care
+  - Styling Tools
+  - Irons
+  - Crimping Irons
+  reference_price: 18.99
+  price_imputed: false
+  average_rating: 4.8
+  review_count: 5
+  description: Gold n hot 2 inch professional gold tone crimping iron for shiny crimped volume.
+- id: P52
+  asin: B002GOXELA
+  title: Proactiv Solution JUMBO Super Size Clarifying Night Cream 2.5oz
+  summary: Proactiv 2.5 oz night cream with retinol and salicylic acid against acne.
+  brand: Proactiv
+  product_type: Night Creams
+  category: Night Creams
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Creams & Moisturizers
+  - Night Creams
+  reference_price: 19.5
+  price_imputed: false
+  average_rating: 4.13
+  review_count: 23
+  description: Make the most of your beauty rest with Proactiv(R) Solution's Clarifying Night Cream. It's
+    formulated with retinol, vitamins, and salicylic acid to help treat and prevent acne blemishes while
+    helping to refine and clarify the skin's tone and texture. This luxurious cream will help restore
+    moisture and unplug pores while giving your skin a radiant glow. Simply cleanse the skin thoroughly,
+    then cover the affected area with a thin layer 1 to 3 times daily
+- id: P53
+  asin: B002WR58XS
+  title: (1 oz / 30 ml) GLYCOLIC Acid 70% Skin Chemical Peel - Unbuffered - Alpha Hydroxy (AHA) For Acne,
+    Oily Skin, Wrinkles, Blackheads, Large Pores &amp; More (from Skin Beauty Solutions)
+  summary: 1 oz 70% glycolic acid chemical peel (strong, professional strength).
+  brand: Skin Beauty Solutions
+  product_type: Glycolic Acid
+  category: Glycolic Acid
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Treatments & Masks
+  - Acids & Peels
+  - Glycolic Acid
+  reference_price: 19.98
+  price_imputed: false
+  average_rating: 4.45
+  review_count: 42
+  description: Glycolic acid works as an exfoliating agent because of its high acidity but easy solubility.
+    When placed on the skin as part of an exfoliating cream or gel, glycolic acid goes under the damaged
+    upper layers of skin and destroys the 'glue', which holds dead skin to the surface. As this dead skin
+    is chemically burned off, the other ingredients carry the individual flakes away and a water rinse
+    neutralizes the remaining acid. The result is a much-smoother skin surface and a more youthful appearance.
+    A secondary benefit is glycolic acid's ability to draw moisturizers into the newly exfoliated skin
+    surface.
+- id: P54
+  asin: B000F63TW0
+  title: Olay Regenerist Microdermabrasion &amp; Peel System 1 Kit
+  summary: Olay at-home microdermabrasion and peel kit.
+  brand: Olay
+  product_type: Microdermabrasion
+  category: Microdermabrasion
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Treatments & Masks
+  - Microdermabrasion
+  reference_price: 21.99
+  price_imputed: false
+  average_rating: 4.34
+  review_count: 130
+  description: Studies have shown regular microdermabrasion is more beneficial to your skin than sporadic
+    treatments. That's why Olay skincare experts developed Regenerist Microdermabrasion & Peel System.
+    Olay combines the power of microdermabrasion with a mini-peel treatment to wake up tired-looking skin.
+    Over time, it visibly improves skin tone and diminishes the appearance of fine lines and wrinkles.Make
+    it part of your regular skincare regimen to gently resurface your skin's texture and activate surface
+    cell renewal for soft, smooth skin. Its even gentle enough to use up to two times a week.There's only
+    one Regenerist, backed by 60 years of Olay skincare experience. If you're ready for a dramatic transformation,
+    Olay Regenerist Microdermabrasion & Peel System offers you the power of a microdermabrasian and mini-peel
+    treatment to regenerate your skin's appearance in the comfort and convenience of your own home. Olay
+    innovation.. it's a beautiful thing.
+- id: P55
+  asin: B00467AXL4
+  title: Nu Derm Healthy Skin Protection SPF 35 - 90ml/3oz
+  summary: 3 oz daily SPF 35 zinc-oxide sunscreen that also calms acne-prone skin.
+  brand: Obagi Medical
+  product_type: Skin Protection
+  category: Skin Protection
+  category_path:
+  - Beauty
+  - Skin Care
+  - Sun
+  - Skin Protection
+  reference_price: 22.5
+  price_imputed: false
+  average_rating: 4.64
+  review_count: 11
+  description: 'A daily sunscreen with SPF 35 Contains micronized zinc oxide & octinoxate Comprehensively
+    shields skin from damaging UVA/UVB rays Corrects cellular skin function Lessens acne flares signs
+    of premature aging & future photodamage Skin appears revitalized healthy & ageless lookingProduct
+    Line: Obagi - Nu Derm - Day CareProduct Size: 90ml/3oz'
+- id: P56
+  asin: B00K7ER6LU
+  title: Travel Packing Cubes- 4pc Set With Free &hearts; Shoe bags&hearts; | Multi-Purpose Use, Packing
+    Cubes Large, | Packing Cubes | Packing Cubes for Travel | Packing Cubes Small, Cosmetic Bag | Cosmetic
+    Bag Set | Toiletry Bag | Men Toiletry Bag | Toiletry Bag For Men | Toiletry Bag For Women | Toiletry
+    Bag For Kids | Makeup Bag | Travel Bag | Luggage | Sports and Outdoor | Uniquely Designed | Quality
+    and Affordable with 100% Replacement and Refund Guarantee!
+  summary: Set of 4 travel packing cubes with a free shoe bag.
+  brand: ''
+  product_type: Toiletry Bags
+  category: Toiletry Bags
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Bags & Cases
+  - Toiletry Bags
+  reference_price: 22.95
+  price_imputed: false
+  average_rating: 5.0
+  review_count: 18
+  description: 'BEST TRAVEL PACKING CUBES WITH A &hearts; FREE BONUS&hearts; SHOEBAG- &#124; &#9733; &#9733;
+    &#9733; &#9733; &#9733; 5 STAR QUALITY!DESIGNED FOR MUTLI-PURPOSE USE, BUILT TO LAST FOR MANY YEARS!&hearts;-
+    When You Need To Travel Without The Stress Of Packing And Unpacking!&hearts;- When You Need To Pack
+    All Your Travel Items Including Your Shoes In One Luggage But In Different Cubes...And You Want Your
+    Cloths Crisp, Clean And Neat on Arrival!&hearts;- When You Need To Hide Your Intimate Undies, Dirty
+    Clothing When Traveling!&hearts;- When You Do Not Want People To See All Your Stuff At The Airport
+    Security Check-Point!&hearts;- When You Travel With The Family And Need Everyone To Mind Their Own
+    Business, Give Each Of Them A Set Of Evalasten Packing Cubes To Pack Their Stuff. This Will Prevent
+    Travel Headaches For You!&hearts;- When You Need To Handle Infants'' Soiled Diapers And Clothing;&hearts;-
+    When You Want To Have Your Cosmetics and Makeup In One Ease To Access And Identify cube; Trust Evalasten
+    Packing Cubes To Help You!QUALITY DIAMOND NYLON.....AFFORDABLE...UNIQUELY DESIGNED FOR YOU AND YOUR
+    FAMILY....BUILT TO LAST!X-LARGER: 17.5" X 12.75" X 3.75"LARGE: 13.75" X 9.75" X 3.75"MEDIUM: 11.0"
+    X 6.75" X 3.75"SMALL: 10.0" X 4.75" X 3.75"YOU WILL SURELY LOVE THESE PACKING CUBES!GO AHEAD AND ORDER
+    EVALASTEN PACKING CUBES AND START ENJOYING ALL THESE BENEFITS&hearts;- You Have Our Guarantee!&hearts;YOU
+    EITHER FALL IN LOVE WITH THESE PACKING CUBES or WE REFUND YOU.&hearts; &hearts; &hearts;Thanks You
+    For Shopping With Us!'
+- id: P57
+  asin: B0019RVJGC
+  title: Trind Natural Nail Repair
+  summary: Trind nail repair treatment that restores moisture to weak, brittle nails.
+  brand: Trind Hand and Nail Care
+  product_type: Nail Repair
+  category: Nail Repair
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Nail Treatments
+  - Nail Repair
+  reference_price: 23.28
+  price_imputed: false
+  average_rating: 3.67
+  review_count: 6
+  description: The nail is made out of 3 layers of protein molecules, connected to each other by Natural
+    Moisturizers. They make the nail supple. In the perfect nail you find 82% of protein-molecules and
+    18% of Natural Moisturizers. Most nail hardeners will just glue the protein-molecules together, leaving
+    no space for the natural moisturizers, and nails become brittle as a result. Trind Nail Repair tightens
+    the protein-molecules while leaving space for the natural moisturizers leaving nails stronger and
+    healthier.
+- id: P58
+  asin: B001DKRM8O
+  title: Jerdon J1010 6-Inch Portable Tabletop Two-Sided Swivel Lighted Makeup Mirror with 3x Magnification,
+    White Finish
+  summary: 6-inch two-sided lighted tabletop makeup mirror with 3x magnification.
+  brand: Jerdon
+  product_type: Makeup Mirrors
+  category: Makeup Mirrors
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Mirrors
+  - Makeup Mirrors
+  reference_price: 23.79
+  price_imputed: false
+  average_rating: 3.86
+  review_count: 29
+  description: The Jerdon J1010 6-Inch Portable Tabletop Two-Sided Swivel Lighted Makeup Mirror is a bathroom
+    and makeup mirror with cool to the touch fluorescent lighting and magnification that fit nicely on
+    any tabletop. The fog free, two-sided square mirror is 6-inches by 6-inches in size and features a
+    smooth 360-degree swivel design that provides 1x and 3x magnification options to make sure every detail
+    of your hair and makeup are in place. The (2) sides of this device house a total of (4) 7-watt light
+    bulbs to provide natural looking, glare free lighting. The J1010 stands up by itself on your countertop,
+    vanity or dresser with a folding back stand. Designed for travel, this item measures 12.35-inches
+    by 2.5-inches by 8-inches and weighs 2.25-pounds. The Jerdon J1010 6-Inch Portable Tabletop Two-Sided
+    Swivel Lighted Makeup Mirror comes with a 1-year limited warranty that protects against any defects
+    due to faulty material or workmanship. The Jerdon Style company has earned a reputation for excellence
+    in the beauty industry with its broad range of quality cosmetic mirrors (including vanity, lighted
+    and wall mount mirrors), hair dryers and other styling appliances. Since 1977, the Jerdon brand has
+    been a leading provider to the finest homes, hotels, resorts, cruise ships and spas worldwide. The
+    company continues to build its position in the market by both improving its existing line with the
+    latest technology, developing new products and expanding its offerings to meet the growing needs of
+    its customers.
+- id: P59
+  asin: B004WHC5G4
+  title: Equate - Hair Regrowth Treatment for Women with Minoxidil 2%, 3 Month Supply
+  summary: 3-month supply of 2% minoxidil hair regrowth treatment for women.
+  brand: Equate
+  product_type: Hair Regrowth Treatments
+  category: Hair Regrowth Treatments
+  category_path:
+  - Beauty
+  - Hair Care
+  - Hair Loss Products
+  - Hair Regrowth Treatments
+  reference_price: 24.0
+  price_imputed: false
+  average_rating: 4.0
+  review_count: 17
+  description: Equate - Hair Regrowth Treatment for Women with Minoxidil 2% Extra Strength revitalizes
+    hair follicles. It helps in the regrowth of hair. 3 Bottles - Three Month Supply.
+- id: P60
+  asin: B002X31FUG
+  title: Redken All Soft Shampoo and Conditioner Set 10.1 Oz 8.5 Oz
+  summary: Redken All Soft shampoo and conditioner set for dry, brittle hair.
+  brand: Redken
+  product_type: Shampoo & Conditioner Sets
+  category: Shampoo & Conditioner Sets
+  category_path:
+  - Beauty
+  - Hair Care
+  - Shampoo & Conditioner Sets
+  reference_price: 26.66
+  price_imputed: false
+  average_rating: 4.47
+  review_count: 17
+  description: All Soft Shampoo and Conditioner are Formulated with Redken's Interbond conditioning System
+    and Illuminating Silk-Luxe Complex The Shampoo Gently Cleanses and Softens Dry Brittle Hair. The Conditioner
+    Moisturizes, Detangles and Softens the Hair Perfect combination for Dry and Brittle hair
+- id: P61
+  asin: B00644YNCM
+  title: SHANY UV Gel Light Nail Dryer, 36 Watts Pro Series
+  summary: 36 W UV nail lamp for drying and curing gel polish, hands and feet.
+  brand: SHANY Cosmetics
+  product_type: Nail Dryers
+  category: Nail Dryers
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Nail Tools
+  - Nail Dryers
+  reference_price: 26.69
+  price_imputed: false
+  average_rating: 4.4
+  review_count: 102
+  description: Now you can dry and cure your nail in seconds, enjoy the ultimate UV nail dryer with 36
+    watts power supply, same as the one used in salons. Odorless lamp, big enough to use for hands and
+    feet. Elegant durable design, comes with protected surge. Auto timer and on or off button.
+- id: P62
+  asin: B0093QBWDQ
+  title: NYX Cosmetics Waiting for Tonight 46 Colors Makeup Kit Palette with Eye Shadows , Concealers,
+    Eyebrow Powders, Blushers, Lip Glosses S127
+  summary: 'NYX 46-color makeup palette: eye shadows, blushes, bronzer, brow powders, concealers, glosses.'
+  brand: NYX
+  product_type: Lip Glosses
+  category: Lip Glosses
+  category_path:
+  - Beauty
+  - Makeup
+  - Lips
+  - Lip Glosses
+  reference_price: 26.97
+  price_imputed: false
+  average_rating: 4.6
+  review_count: 5
+  description: NYX versatile makeup palette - Waiting For Tonight - contains 32 highly pigmented shades,
+    2 complimenting blushes, 1 bronzer, 4 eyebrow powders, 3 concealers, 4 chic lip glosses. Only take
+    a few minutes, it takes your daytime look into a sassy goddess of the night look with one handy palette.
+- id: P63
+  asin: B001A3S9AY
+  title: Paul Mitchell Tea Tree Hair And Scalp Treatment Unisex, 16.9 Ounce
+  summary: 16.9 oz Paul Mitchell tea tree hair and scalp treatment.
+  brand: Paul Mitchell
+  product_type: Hair & Scalp Treatments
+  category: Hair & Scalp Treatments
+  category_path:
+  - Beauty
+  - Hair Care
+  - Hair & Scalp Treatments
+  reference_price: 27.0
+  price_imputed: false
+  average_rating: 4.8
+  review_count: 5
+  description: Invigorating and SoothingrnFor all hair types. Moisturizes and conditions hair. Helps to
+    soothe and treat scalp. Cool and refreshing. Specially formulated with Australian Tea Tree Oil, the
+    finest ingredients and activated blends. Non-medicated.rnGuaranteed only when sold by a professional
+    hairdresser.rnJohn Paul Mitchell Systems does not conduct or endorse animal testing.rnMade in the
+    USArnAdditional Product Information:rnWe are not associated or affiliated with John Paul Mitchell
+    Systems and are not a licensed retailer of John Paul Mitchell Systems. John Paul Mitchell Systems
+    guarantees this product only when sold through authorized retailers, and cannot guarantee the authenticity
+    of any product sold by an unauthorized retailer. We cannot guarantee that this product is covered
+    by any manufacturer's warranties or eligible for any manufacturer's rebate. If the UPC codes or other
+    tracing codes are missing from any product container of a John Paul Mitchell Systems product, please
+    retain your purchase receipt to assist in the tracing of that product in the unlikely event it is
+    defective.
+- id: P64
+  asin: B00021DVCQ
+  title: BareMinerals Original Foundation Broad Spectrum SPF 15 8 g/0.28 Oz (Fair C10 8g/0.28 oz)
+  summary: bareMinerals mineral powder foundation with SPF 15, shade Fair.
+  brand: Bare Escentuals
+  product_type: Foundation
+  category: Foundation
+  category_path:
+  - Beauty
+  - Makeup
+  - Face
+  - Foundation
+  reference_price: 28.0
+  price_imputed: false
+  average_rating: 3.68
+  review_count: 95
+  description: bareMinerals Original Foundation Broad Spectrum SPF15 is an award-winning mineral foundation
+    that gives you all the flawless coverage you want with a no-makeup look and feel that lasts up to
+    eight hours. The creamy minerals diminish the appearance of imperfections without drying out skin.
+    Naturally luminous finish.A groundbreaking formula, bareMinerals Original Foundation Broad Spectrum
+    SPF15 is clinically proven to promote clearer, healthier-looking skin. It is formulated without parabens,
+    binders, fillers, or synthetic chemicals. This foundation has been awarded the "Best Department/Specialty
+    Stores Foundation" in the Glammy Award organized by Glamour Magazine from 2005-2013.
+- id: P65
+  asin: B001ABLKK2
+  title: Cure Natural Aqua Gel 250ml - Best selling exfoliator in Japan!
+  summary: Cure Natural Aqua Gel, a gentle exfoliating gel and Japan's best seller.
+  brand: Toyo Life Service
+  product_type: Exfoliators
+  category: Exfoliators
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Exfoliators & Scrubs
+  - Exfoliators
+  reference_price: 28.0
+  price_imputed: false
+  average_rating: 4.46
+  review_count: 81
+  description: 'Cure Natural Aqua Gel is the #1 best selling exfoliator in Japan, selling 1 bottle every
+    12 seconds. Cure''s unique and gentle formula allows for it to be used on people with even the most
+    sensitive skin. Cure''s status as a cult hit and Japanese beauty product legend stems from the simple
+    fact that Cure does what it promises: exfoliates gently and effectively, without any harsh chemicals
+    or alcohol.'
+- id: P66
+  asin: B003BQ6QXK
+  title: 'Fogless Shower Mirror with Squeegee by ToiletTree Products. Guaranteed Not to Fog, Designed
+    Not to Fall. #1 Selling and Ranked by Amazon Customers. (Silver)'
+  summary: Fog-free shower mirror with a squeegee, for shaving in the shower.
+  brand: ToiletTree Products
+  product_type: Shower Mirrors
+  category: Shower Mirrors
+  category_path:
+  - Beauty
+  - Tools & Accessories
+  - Mirrors
+  - Shower Mirrors
+  reference_price: 29.95
+  price_imputed: false
+  average_rating: 4.56
+  review_count: 39
+  description: 'Amazon''s #1 Reviewed Fogless Shower MirrorLook your best by taking care of your face
+    in your shower. This patented mirror is guaranteed not to fog in the shower. Other fogless shower
+    mirrors just don''t work. No more suction cups falling off the wall! Our removable silicone adhesive
+    secures the mirror to all shower surfaces and will not damage tiles or shower walls! The mirror conveniently
+    detaches from the bracket so you can easily fill the reservoir before each use. An included self-stored
+    squeegee removes any excess water from the front of your mirror. An adjustable frame makes the mirror
+    accommodating for multiple users and angles.To use: Simply slide the mirror off the bracket before
+    each shower and fill with hot water. The hot water will keep the mirror the same temperature as the
+    environment in your shower which makes it scientifically impossible for your mirror to ever fog. Filling
+    the mirror each shower takes 5-7 seconds.Shatter proof high quality acrylic mirror that adheres to
+    virtually any wall surface with removable silicone adhesive.Easily adjustable bracket accommodates
+    multiple users and angles.Built in shelf to store your razor, sponge or tweezers.Squeegee included
+    to wipe away excess water drops.Designed not to rust, discolor or damage bathroom surfaces.Measures
+    8.5in x 6.5in x 1.5in.If you are not satisfied with your purchase we offer a 100% 30-day money back
+    guarantee. That''s how confident we are that this will be the last fogless shower mirror you will
+    ever have to buy.'
+- id: P67
+  asin: B000KFX10G
+  title: Tree Hut Shea Body Butter, Brazilian Nut, 7-Ounce (Pack of 3)
+  summary: Pack of 3 Tree Hut shea body butters, Brazil nut scent.
+  brand: Tree Hut
+  product_type: Body Butter
+  category: Body Butter
+  category_path:
+  - Beauty
+  - Skin Care
+  - Body
+  - Moisturizers
+  - Body Butter
+  reference_price: 30.95
+  price_imputed: false
+  average_rating: 4.62
+  review_count: 53
+  description: Experience Tree Hut Body Butter with rich, sweet essence of Brazil Nut. Natural Brazil
+    nut oil hydrates and repairs, damaged and neglected skin, with vitamins A, C and E, helping it to
+    regain its healthy sheen. This extra thick body butter, infused with certified organic Shea butter,
+    Cocoa butter, Brazil nut oil and Safflower Seed oil, was designed to seal in moisture for those problem
+    areas, leaving you with repaired, renewed skin.
+- id: P68
+  asin: B00188IFHS
+  title: WEN by Chaz Dean Lavender Cleansing Conditioner 16 oz
+  summary: 16 oz WEN lavender cleansing conditioner (shampoo and conditioner in one).
+  brand: WEN&reg; by Chaz Dean
+  product_type: Conditioners
+  category: Conditioners
+  category_path:
+  - Beauty
+  - Hair Care
+  - Conditioners
+  reference_price: 31.5
+  price_imputed: false
+  average_rating: 4.2
+  review_count: 101
+  description: WEN BY CHAZ DEAN by Chaz Dean WEN CLEANSING CONDITIONER LAVENDER 16 OZ
+- id: P69
+  asin: B002XQ1YT0
+  title: Viva La Juicy By Juicy Couture For Women Eau De Parfum Spray 1.7 Oz
+  summary: Viva La Juicy eau de parfum for women, 1.7 oz (floral, caramel, vanilla).
+  brand: Juicy Couture
+  product_type: Eau de Parfum
+  category: Eau de Parfum
+  category_path:
+  - Beauty
+  - Fragrance
+  - Women's
+  - Eau de Parfum
+  reference_price: 33.0
+  price_imputed: false
+  average_rating: 4.33
+  review_count: 36
+  description: VIVA LA JUICY by Juicy Couture for Women EAU DE PARFUM SPRAY 1.7 OZ honeysuckle, gardenia,
+    jasmine, praline, amber, caramel vanilla, sandalwood
+- id: P70
+  asin: B006ZBP8NM
+  title: Lactic Acid 50% Gel Peel - Enhanced with Kojic Acid &amp; Bearberry Extract (Professional Chemical
+    Peel)
+  summary: Professional 50% lactic acid gel peel with kojic acid to even skin tone.
+  brand: PERFECT IMAGE
+  product_type: Lactic Acid
+  category: Lactic Acid
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Treatments & Masks
+  - Acids & Peels
+  - Lactic Acid
+  reference_price: 34.0
+  price_imputed: false
+  average_rating: 4.11
+  review_count: 71
+  description: Professionally formulated to even skin tone and effectively lighten pigmentation by inhibiting
+    the enzyme responsible for producing excess melanin. Lactic Acid has been well-known to reduce the
+    appearance of scars, age spots, sunspots, and discoloration associated with acne or photo-damaged
+    skin. Lactic also promotes stimulation of collagen production, while increasing cell turn over rate,
+    for a more brightened and balanced texture. Enhanced with natural skin lightening botanical extracts
+    of Bearberry and Licorice which provide a more healthy and brightened skin appearance. Botanical extracts
+    provide a rich source of antioxidants and vitamins, including Vitamin C and Vitamin E which promote
+    natural healing and repair of damaged skin caused by aging and environmental factors. Why Perfect
+    Image? Many skin peels being sold today are not made in a professionally facility. This means they
+    are not manufactured under the proper environments and no quality control, assay testing (activity
+    of ingredients), micro testing (bacteria, yeast, mold, other Microorganisms), identity testing (Purity
+    and Identity of Ingredients) and shelf life testing is conducted. This could cause a number of potential
+    health hazards or permanently damage your skin if the product is contaminated. Contamination may occur
+    during manufacturing or by the end-user after the container is opened. Without some antimicrobial
+    properties, products can allow the growth of many different microorganisms. We believe in incorporating
+    natural plant extracts or organic ingredients which promote or aid in the healing, repairing, or protecting
+    of the skin. Each ingredient is hand picked for its unique skin benefiting properties. We also incorporate
+    natural preservatives into each product, as some studies have suggested using parabens as preservatives
+    may cause potential health risks.
+- id: P71
+  asin: B000629ZHG
+  title: Tinted Moisturizer - Almond
+  summary: Laura Mercier tinted moisturizer with SPF 20, shade Almond.
+  brand: laura mercier
+  product_type: Tinted Moisturizers
+  category: Tinted Moisturizers
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Creams & Moisturizers
+  - Tinted Moisturizers
+  reference_price: 36.0
+  price_imputed: false
+  average_rating: 4.05
+  review_count: 19
+  description: Laura Mercier's Tinted Moisturizer is perfect for all skin types & provides ideal protection
+    from both UVA & UVB rays with an SPF 20. 1.5 fl. oz.
+- id: P72
+  asin: B006ZENPYS
+  title: TCA 15% Gel Peel - Salicylic Acid 5% Enhanced with Botanical Extracts (Professional Quality Chemical
+    Peel)
+  summary: Professional 15% TCA gel peel with 5% salicylic acid for wrinkles, acne and scars.
+  brand: PERFECT IMAGE
+  product_type: Salicylic Acid
+  category: Salicylic Acid
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Treatments & Masks
+  - Acids & Peels
+  - Salicylic Acid
+  reference_price: 39.95
+  price_imputed: false
+  average_rating: 4.11
+  review_count: 44
+  description: Formulated specifically to help reduce wrinkles, fine lines, acne, scars, and reverse the
+    visible signs of aging. TCA (Trichloroacetic Acid), a powerful exfoliating agent works by removing
+    the outer damaged layers of the skin in the epidermal and dermal regions. Salicylic Acid, a beta hydroxy
+    acid has been proven in many studies to reduce acne by softening keratin, the protein that holds skin
+    together. Salicylic also works at unclogging pores, and penetrating into the skin to kill the bacteria
+    responsible for causing acne. Why Perfect Image? Many skin peels being sold today are not made in
+    a professionally facility. This means they are not manufactured under the proper environments and
+    no quality control, assay testing (activity of ingredients), micro testing (bacteria, yeast, mold,
+    other Microorganisms), identity testing (Purity and Identity of Ingredients) and shelf life testing
+    is conducted. This could cause a number of potential health hazards or permanently damage your skin
+    if the product is contaminated. Contamination may occur during manufacturing or by the end-user after
+    the container is opened. Without some antimicrobial properties, products can allow the growth of many
+    different microorganisms. We believe in incorporating natural plant extracts or organic ingredients
+    which promote or aid in the healing, repairing, or protecting of the skin. Each ingredient is hand
+    picked for its unique skin benefiting properties. We also incorporate natural preservatives into each
+    product, as some studies have suggested using parabens as preservatives may cause potential health
+    risks.
+- id: P73
+  asin: B006GTKSHY
+  title: SHANY COSMETICS The Masterpiece 7 Layers All-in-One Makeup Set
+  summary: 'SHANY Masterpiece all-in-one makeup set: a 7-layer case of colors.'
+  brand: SHANY Cosmetics
+  product_type: Makeup Sets
+  category: Makeup Sets
+  category_path:
+  - Beauty
+  - Makeup
+  - Makeup Sets
+  reference_price: 41.89
+  price_imputed: false
+  average_rating: 4.94
+  review_count: 51
+  description: All-in-one makeup set by SHANY COSMETICS " The Masterpiece" is now available nationwide.
+    This is the result of 6 months of working on surveys and votes for best colors through out USA. We
+    have asked our fans, customers and designers to come up with colors that every women dreams and here
+    is the result in beautiful gift packaging with magnet door, and sliding eye shadow palettes. now there
+    is no need to buy multiple palettes, you can get this awesome set which comes with all you need for
+    flawless makeup. SHANY "The Masterpiece" is pending patent, and registered item for SHANY COSMETICS.
+    Each palette is separately housed in a box, with clear plastic protection. There are total of 7 layers,
+    each layers carry a different set of makeup. All famous and useful eye shadow colors and foundations,
+    concealers, lip sticks and more. When you get your item go ahead and do the product review for it
+    and receive a free gift from SHANY COSMETICS.
+- id: P74
+  asin: B003ZWEW1S
+  title: Revlon RVSP3501B1 Moisturestay Quick Heat Paraffin Bath
+  summary: Revlon quick-heat paraffin bath for soothing hands and joint pain.
+  brand: Revlon
+  product_type: Paraffin Baths
+  category: Paraffin Baths
+  category_path:
+  - Beauty
+  - Skin Care
+  - Hands & Nails
+  - Paraffin Baths
+  reference_price: 45.99
+  price_imputed: false
+  average_rating: 4.36
+  review_count: 11
+  description: Revlon&#x2019;s moisture stay quick heat paraffin bath is useful in symptomatic relief
+    of pain caused by arthritis, bursitis and chronic joint inflammation. it provides thermal relief using
+    a full range of heat comfort levels. the heat softened wax removes dry surface skin and smoothes and
+    softens skin on hands, elbows and feet. for faster relief and results the bath gently melts wax in
+    60 minutes and the indicator light gently glows when the unit is operating. included is 3 pounds of
+    wax, 2 thermal mitts and 30 glove liners.
+- id: P75
+  asin: B003YCCLIA
+  title: Dr. Dennis Gross Skincare Extra Strength Alpha Beta Peel, 30 Count JAR
+  summary: Dr. Dennis Gross extra-strength alpha beta peel pads, 30 treatments.
+  brand: Dr. Dennis Gross Skincare
+  product_type: Alpha Beta
+  category: Alpha Beta
+  category_path:
+  - Beauty
+  - Skin Care
+  - Face
+  - Treatments & Masks
+  - Acids & Peels
+  - Alpha Beta
+  reference_price: 74.4
+  price_imputed: false
+  average_rating: 4.35
+  review_count: 23
+  description: The Extra Strength Alpha Beta Peel is a boosted version of Dr. Gross's number-one selling
+    anti-aging treatment on pre-soaked towelettes. Delivering professional results without irritation,
+    this patented two-step treatment reduces fine lines, wrinkles, and pore size while diminishing dark
+    spots and improving skin tone and texture. Thirty applications are included.The Extra Strength Alpha
+    Beta&reg; Peel improves skin tone and texture in two simple steps.View larger.Professional Anti-Aging
+    Results at HomeThe Extra Strength Alpha Beta&reg; Peel is an anti-aging peel that gives you professional
+    results at home. Formulated for daily use, these pre-soaked towelettes contain the patented formula
+    that Dr. Gross uses at his NYC medical practice. Users of this treatment experience a visible reduction
+    in wrinkles, a brighter complexion, minimized pores, and resurfaced skin.Diminishes Fine Lines, Wrinkles,
+    and Pore SizeThe Extra Strength Alpha Beta&reg; Peel is for anybody who wants to reduce the appearance
+    of fine lines, wrinkles, and pore size and make their skin look younger and more radiant, increasing
+    its natural glow and health. This proven treatment is also ideal for targeting dark spots and improving
+    skin tone and texture.This innovative system includes purifying agents to smooth signs of aging and
+    improve skin clarity.View larger.Results You Can See, Skin You Will Love, From a Dermatologist you
+    Trust100&#37; of users surveyed agreed that the formula was gentle and fit easily into their regular
+    beauty routine. 96&#37; of users surveyed reported that their skin looked more youthful and glowing.**Results
+    based on a 28-day consumer study by The Benchmarking Company.Patented Extra-Strength FormulaThe Extra
+    Strength Alpha Beta&reg; Peel contains higher concentrations of Alpha Beta&reg; acids, plus anti-aging
+    boosters, including Mandelic Acid and Willow Bark Extract. This patented, two-step extra- strength
+    formula contains multiple active ingredients, all shown to correct and erase skincare concerns without
+    causing irritation or requiring recovery time.Improves Skin in Two Easy StepsThese pre-soaked towelettes
+    are prepared and packed for convenient application in two simple, easy-to-use steps. Apply Step 1
+    to clean, dry skin in circular motions from the forehead to the neck. Continue until pad feels dry.
+    Wait two minutes and apply Step 2 using the same technique. Do not rinse after either step.When you
+    are done, you will have delivered multiple active ingredients to your skin, all proven to reduce the
+    appearance of fine lines and wrinkles and give you a healthier, more radiant look.What's in the BoxDr.
+    Dennis Gross Extra Strength Alpha Beta&reg; Peel, 30 Applications.

@@ -1,0 +1,19 @@
+# ADL 2026 final project; the same as pyproject.toml (uv sync), for pip:
+#   pip install -r requirements.txt
+# Tested together on Python 3.11 / 3.12; torch 2.11 with CUDA 13 needs NVIDIA driver >= 580.
+
+# the market harness
+openai>=1.40
+pydantic>=2.7
+pyyaml>=6.0
+
+# serving Qwen3.5-4B + LoRAs (run_local.sh, --launch-vllm); the grading version
+vllm==0.25.1
+
+# training a LoRA (any framework that saves a PEFT adapter is fine); tested versions
+transformers==5.22.1
+peft==0.21.2
+trl==1.17.1
+datasets>=3.0
+accelerate>=1.0
+safetensors
